@@ -17,14 +17,11 @@ nav{
 .MenuGauche{
     display: flex;
     align-items: center;
-    text-decoration: none;
-    
 }
 
 a{
     margin-left: 5%;
     width: 100px;
-    text-decoration: none;
 }
 
 .MenuDroit{
@@ -44,4 +41,5 @@ button{
 
 #titre{
     font-size: 24px;
+    text-decoration: none;
 }
