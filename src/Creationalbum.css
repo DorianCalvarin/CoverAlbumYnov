@@ -1,0 +1,185 @@
+html, body{
+    margin : 0;
+    padding : 0;
+
+    background-color: #252525;
+}
+
+.Ariane{
+    Display: flex;
+    justify-content: center;
+    background-color: #252525;
+    
+    
+}
+
+.R1{
+
+    position: absolute;
+width: 60px;
+height: 10px;
+left: 530px;
+top: 153px;
+
+background: #F32C2C;
+}
+
+.R4{ 
+    
+    position: absolute;
+width: 60px;
+height: 10px;
+left: 690px;
+top: 153px;
+
+background: #F3F3F3;
+opacity: 0.2;
+}
+
+.R3{
+
+position: absolute;
+width: 60px;
+height: 10px;
+left: 770px;
+top: 153px;
+
+background: #F3F3F3;
+opacity: 0.2;
+}
+
+.R2{
+
+    position: absolute;
+width: 60px;
+height: 10px;
+left: 610px;
+top: 153px;
+
+background: #F3F3F3;
+opacity: 0.2;
+}
+
+.R5{
+
+
+position: absolute;
+width: 60px;
+height: 10px;
+left: 850px;
+top: 153px;
+
+background: #F3F3F3;
+opacity: 0.2;
+}
+
+.Couleurfond {
+
+
+position: absolute;
+width: 229px;
+height: 38px;
+left: 606px;
+top: 85px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.Logo {
+
+    position: absolute;
+width: 138px;
+height: 80px;
+left: 5vh;
+top: 3vh;
+
+    
+}
+.Rectangle1 {
+    position: absolute;
+width: 180px;
+height: 14px;
+left:61vh;
+top: 28vh;
+}
+
+.Rectangle2 {
+    position: absolute;
+width: 99.09px;
+height: 14px;
+left: 180vh;
+top: 90vh;
+
+background: #F37925;
+transform: rotate(-127.67deg);
+}
+
+.Rectangle4 {
+    position: absolute;
+    width: 99.09px;
+    height: 14px;
+    left: 129vh;
+    top: 43vh;  
+}
+
+.next {
+    height: 100%;
+}
+
+.RecGauche { 
+
+    
+    position: absolute;
+width: 10vh;
+height: 100vh;
+left: 0vh;
+top: 0vh;
+
+background: #D9D9D9;
+opacity: 0.1;
+}
+
+.RecDroite { 
+
+    
+    position: absolute;
+width: 10vh;
+height: 100vh;
+left: 200vh;
+top: 0vh;
+
+background: #D9D9D9;
+opacity: 0.1;
+}
+
+.Fleches {
+
+    background-color: #252525;
+}
+
+.FlecheD {
+
+    position: absolute;
+width: 15px;
+height: 30px;
+left: 203.5vh;
+top: 50vh;
+
+}
+
+.FlecheG {
+
+    position: absolute;
+width: 15px;
+height: 30px;
+left: 2.5vh;
+top: 50vh;
+
+}
