@@ -1,24 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './astyle.css';
-import Header from './components/Header.js';
+import './flip.css';
 import styled from 'styled-components';
+import Flip from './components/Flip';
 
 function App() {
   return (
-    <Element>
       <div className="App">
-        <Header></Header>
+        <Flip></Flip>
       </div>
-    </Element>
+
   );
 }
-
-const Element = styled.div`
-  .App {
-    background-color: red;
-  }
-;`
-
 
 export default App;
