@@ -54,21 +54,29 @@ p{
 	color: #252525;
 }
 
+.Droit{
+	height: 100%;
+	width: 50%;
+	float: right;
+
+}
+
 .Menu{
-	height: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 
 /* Group 23 */
 
 .m1{
-	position: absolute;
-	z-index: 1;
-	width: 206px;
-	height: 81px;
-	right: -10px;
-	top: 60px;
+	float: right;
 
+	width: 50%;
+	height: 81px;
+	margin-top: 10%;
+	margin-right: -5%;
 	border-radius: 8px;
 
 	background: #91C3CE;
@@ -79,12 +87,12 @@ p{
 /* Group 25 */
 
 .m2 {
-	position: absolute;
-	width: 297px;
+	float: right;
+
+	width: 50%;
 	height: 81px;
-	right: -10px;
-	top: 168px;
-	
+	margin-top: 5%;
+	margin-right: -5%;
 	border-radius: 8px;
 
 	background: #F37925;
@@ -94,12 +102,12 @@ p{
 /* Group 24 */
 
 .m3{
-	position: absolute;
-	width: 250px;
-	height: 81px;
-	right: -10px;
-	top: 276px;
+	float: right;
 
+	width: 50%;
+	height: 81px;
+	margin-top: 5%;
+	margin-right: -5%;
 	border-radius: 8px;
 
 	background: #FAC670;
