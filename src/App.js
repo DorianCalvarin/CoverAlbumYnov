@@ -2,14 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './astyle.css';
 import './Creationalbum.css';
-import Creationalbum from './components/Creationalbum';
+import './flip.css';
+import Flip from './components/Flip';
 
 function App() {
   return (
       <div className="App">
-        <Creationalbum></Creationalbum>
+        <Flip></Flip>
       </div>
-
   );
 }
 
