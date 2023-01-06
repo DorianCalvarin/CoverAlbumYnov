@@ -1,11 +1,17 @@
 import React from 'react';
 import '../flip.css';
+import Creationalbum  from './Creationalbum.js';
 
-function Flip() {
+
+
+function Flip({
+	setModifPage
+}) {
   return (
 		<div class="all">
 			<div class="content">
 				<div class="RectangleGauche">
+					<img src='/logoflip.png' class="logo"></img>
 					<h1>Music is also shared through the eyes </h1>
 					<p class="intro">
 						Our website allows artists to create unique and original album covers using 
@@ -35,7 +41,7 @@ function Flip() {
 				</div>
 				<div class="Droit2">
 					<h2>Start building your unique album cover </h2>
-					<div class="GetStart">
+					<div class="GetStart" onClick={() => setModifPage("Creationalbum")}>
 						<button>Get started</button>
 					</div>
 				</div>
