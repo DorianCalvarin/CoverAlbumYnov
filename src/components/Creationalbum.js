@@ -4,17 +4,17 @@ function Creationalbum() {
     return (
         <div class="All">
             <div class="next">
-                        <div class="RecGauche">
+                <div class="RecGauche">
                         
-                        </div>
-                        <div class="RecDroite">
+                </div>
+                <div class="RecDroite">
                         
-                        </div>
-                        <div class="Fleches">
-                            <div Class="FlecheG">
-                            <img src="/FlecheG.png"></img> 
+                </div>
+                 <div class="Fleches">
+                      <div Class="FlecheG">
+                      <img src="/FlecheG.png"></img> 
 
-                            </div>
+                 </div>
                         <div class="FlecheD">
                         <img src="/FlecheD.png"></img> 
                         </div>
@@ -27,11 +27,10 @@ function Creationalbum() {
                         <div class="Rectangle1">
                             <img src="/Rectangle 143.png"></img>
                         </div>
-                        <div class="Rectangle2">
-                            <img src="/Rectangle 142.png"></img>
-                        </div>
+
                         <div class="Rectangle4">
                             <img src="/Rectangle 140.png"></img>
+                            <img src="/Rectangle 140.png" alt="Rectangle140" class="animated-image" />
                         </div>
                         
                     </div>
