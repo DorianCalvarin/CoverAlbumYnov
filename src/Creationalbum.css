@@ -76,11 +76,11 @@ opacity: 0.2;
 .Couleurfond {
 
 display: flex;
-text-align: center;
+justify-content: center;
 position: absolute;
 width: 229px;
 height: 38px;
-
+padding: 0;
 top: 85px;
 
 font-family: 'Lato';
