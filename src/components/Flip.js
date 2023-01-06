@@ -1,6 +1,5 @@
 import React from 'react';
 import '../flip.css';
-import Creationalbum  from './Creationalbum.js';
 
 
 
@@ -8,7 +7,7 @@ function Flip({
 	setModifPage
 }) {
   return (
-		<div class="all">
+		<div class="all" id='1'>
 			<div class="content">
 				<div class="RectangleGauche">
 					<img src='/logonb.png' class="logo"></img>
@@ -20,19 +19,29 @@ function Flip({
 				</div>
 				<div class="Droit">
 					<div class="Menu">
-						<div class="m1">
-							<p>What is Flip ?</p>
-						</div>
-						<div class="m2">
-							<p>Album cover generator</p>
-						</div>
-						<div class="m3">
-							<p>Generative Design</p>
-						</div>
+						<a href='#1'class="lien1">
+							<div class="m1">
+								<p>What is Flip ?</p>
+							</div>
+						</a>
+						<a href='#2' class="lien2">
+							<div class="m2">
+								<p>Album cover generator</p>
+							</div>
+						</a>
+						<a href='#3' class="lien3">
+							<div class="m3">
+								<p>Generative Design</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="RectMusic">
+						<div class="RectMusic1"></div>
 					</div>
 				</div>
 			</div>
-			<div class="Content2">
+			<div class="Content2" id="2">
 				<div class="Gauche2">
 					<img src='/coverdesign.png' class='coverdesign'></img>
 					<p class="intro">
@@ -46,7 +55,7 @@ function Flip({
 					</div>
 				</div>
 			</div>
-			<div class="Content3">
+			<div class="Content3" id='3'>
 				<div class="Gauche3">
 					<h3>How does <span>generative design</span> works? </h3>
 					<p class="intro">
