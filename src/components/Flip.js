@@ -1,10 +1,11 @@
 import React from 'react';
 import '../flip.css';
+import Creationalbum from './Creationalbum.js';
 
 
 
 function Flip({
-	setModifPage
+setModifPage
 }) {
   return (
 		<div class="all" id='1'>

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Creationalbum.css'
-function Creationalbum() {
+import '../Motifs.css';
+function Motifs() { 
     return (
         <div class="All">
             <div class="next">
@@ -14,20 +14,12 @@ function Creationalbum() {
                       <div Class="FlecheG">
                       <img src="/FlecheG.png"></img> 
 
-                     </div>
+                 </div>
                         <div class="FlecheD">
                         <img src="/FlecheD.png"></img> 
                         </div>
-                 </div>
-            </div>
-            <div class="Album">
-                
-
-
-
-
-
-            </div>
+                        </div>
+                    </div>
                <div class="Logo" >
                         <img src="/logoflip.png"></img>  
                     </div> 
@@ -55,7 +47,7 @@ function Creationalbum() {
                     
                 <div class="Ariane"> 
                  
-                     <h1 class="Couleurfond">Couleur de fond</h1>
+                     <h1 class="Couleurfond">Motifs</h1>
                              <div class="5rectangles">
                              <div class="R1">
 
@@ -89,4 +81,4 @@ function Creationalbum() {
 }
 
 
-export default Creationalbum;
+export default Motifs;
