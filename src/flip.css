@@ -25,8 +25,8 @@ html, body{
 /* Music is also shared through the eyes */
 
 h1{
-	padding-left: 5%;
-	padding-right: 20%;
+	padding-left: 5vh;
+	padding-right: 20vh;
 
 	font-family: 'Arial';
 	font-style: normal;
@@ -44,6 +44,7 @@ h1{
 
 .logo{
 	width: 20%;
+	margin-left: 5vh;
 }
 
 
