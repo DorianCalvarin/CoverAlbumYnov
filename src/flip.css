@@ -14,7 +14,7 @@ html, body{
 .RectangleGauche {
 	position: absolute;
 	width: 50%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -27,7 +27,7 @@ html, body{
 /* Music is also shared through the eyes */
 
 h1{
-	padding-left: 5vh;
+	padding-left: 3vw;
 	padding-right: 20vh;
 
 	font-family: 'lato';
@@ -48,7 +48,7 @@ span{
 
 .logo{
 	width: 20%;
-	margin-left: 5vh;
+	margin-left: 3vw;
 	margin-top: 2vh;
 }
 
@@ -56,8 +56,8 @@ span{
 /* Our website allows artists to create unique and original album covers using our online generative design tool. */
 
 .intro{
-	padding-left: 5%;
-	padding-right: 30%;
+	padding-left: 3vw;
+	padding-right: 45%;
 
 	font-family: 'Lato';
 	font-style: normal;
@@ -71,8 +71,8 @@ span{
 }
 
 .Droit{
-	height: 100%;
-	width: 50%;
+	height: 100vh;
+	width: 50vw;
 	float: right;
 
 }
@@ -82,7 +82,7 @@ span{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	width: 50%;
+	width: 50vw;
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 500;
@@ -92,12 +92,15 @@ span{
 
 .m1{
 	float: right;
-	padding-left: 2%;
+	padding-left: 2vw;
 
 	width: 30%;
 	height: 81px;
 	margin-top: 10%;
 	border-radius: 8px 0 0 8px;
+
+	display: flex;
+	align-items: center;
 
 	background: #91C3CE;
 
@@ -114,7 +117,8 @@ span{
 
 	background: #F37925;
 
-
+	display: flex;
+	align-items: center;
 }
 
 .m3{
@@ -127,6 +131,8 @@ span{
 
 	background: #FAC670;
 
+	display: flex;
+	align-items: center;
 
 }
 
@@ -136,11 +142,13 @@ span{
 	background-color: #252525;
 }
 .Gauche2{
-	height: 100%;
+	height: 100vh;
 	width: 50%;
 	float: left;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .Gauche2 > p{
@@ -156,7 +164,7 @@ span{
 
 h2{
 	padding-left: 5%;
-	padding-right: 16%;
+	padding-right: 25%;
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 700;
@@ -164,11 +172,14 @@ h2{
 	line-height: 80px;
 	/* or 80% */
 
-	display: flex;
-	align-items: center;
 	letter-spacing: -2.445px;
 
 	color: #252525;
+}
+
+.coverdesign{
+	width: 45%;
+	margin-top: 4%;
 }
 
 .GetStart{
@@ -208,8 +219,6 @@ h3{
 	line-height: 80px;
 	/* or 80% */
 
-	display: flex;
-	align-items: center;
 	letter-spacing: -2.445px;
 
 	color: #252525;
@@ -218,6 +227,22 @@ h3{
 .Content3{
 	height: 100vh;
 	background-color: #252525;
+}
+
+.Droit3{
+	height: 100vh;
+	width: 50vw;
+	float: right;
+	display: flex;
+	align-items: flex-end;
+}
+
+.fondbas{
+	width: 100%;
+}
+
+.Menu p{
+	margin: 0;
 }
 
 

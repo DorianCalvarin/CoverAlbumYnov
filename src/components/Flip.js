@@ -11,7 +11,7 @@ function Flip({
 		<div class="all">
 			<div class="content">
 				<div class="RectangleGauche">
-					<img src='/logoflip.png' class="logo"></img>
+					<img src='/logonb.png' class="logo"></img>
 					<h1>Music is also shared through <span>the eyes</span> </h1>
 					<p class="intro">
 						Our website allows artists to create unique and original album covers using 
@@ -34,13 +34,13 @@ function Flip({
 			</div>
 			<div class="Content2">
 				<div class="Gauche2">
-					<img src=''></img>
+					<img src='/coverdesign.png' class='coverdesign'></img>
 					<p class="intro">
 						A few minutes, some inspiration, and a bit of creativity are all you need.
 					</p>
 				</div>
 				<div class="Droit2">
-					<h2>Start building your unique album cover </h2>
+					<h2>Start building your <span>unique</span> album cover </h2>
 					<div class="GetStart" onClick={() => setModifPage("Creationalbum")}>
 						<button>Get started</button>
 					</div>
@@ -48,14 +48,14 @@ function Flip({
 			</div>
 			<div class="Content3">
 				<div class="Gauche3">
-					<h3>How does generative design works? </h3>
+					<h3>How does <span>generative design</span> works? </h3>
 					<p class="intro">
 						It involves feeding the software with certain parameters and constraints, 
 						and then letting it generate a variety of design options based on those parameters.
 					</p>
 				</div>
 				<div class="Droit3">
-					
+					<img src='\fondbas.png' class='fondbas'></img>
 				</div>
 			</div>
 		</div>
