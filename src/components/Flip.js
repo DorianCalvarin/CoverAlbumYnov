@@ -12,7 +12,7 @@ function Flip({
 			<div class="content">
 				<div class="RectangleGauche">
 					<img src='/logoflip.png' class="logo"></img>
-					<h1>Music is also shared through the eyes </h1>
+					<h1>Music is also shared through <span>the eyes</span> </h1>
 					<p class="intro">
 						Our website allows artists to create unique and original album covers using 
 						our online generative design tool.
