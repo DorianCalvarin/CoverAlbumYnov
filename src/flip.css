@@ -25,7 +25,8 @@ html, body{
 /* Music is also shared through the eyes */
 
 h1{
-	padding-left: 5%;
+	padding-left: 5vh;
+	padding-right: 20vh;
 
 	font-family: 'Arial';
 	font-style: normal;
@@ -39,6 +40,11 @@ h1{
 	letter-spacing: -2.445px;
 
 	color: #252525;
+}
+
+.logo{
+	width: 20%;
+	margin-left: 5vh;
 }
 
 
@@ -81,8 +87,9 @@ h1{
 
 .m1{
 	float: right;
+	padding-left: 2%;
 
-	width: 50%;
+	width: 30%;
 	height: 81px;
 	margin-top: 10%;
 	border-radius: 8px 0 0 8px;
@@ -94,10 +101,10 @@ h1{
 
 .m2 {
 	float: right;
-
-	width: 50%;
+	padding-left: 2%;
+	width: 40%;
 	height: 81px;
-	margin-top: 5%;
+	margin-top: 3%;
 	border-radius: 8px 0 0 8px;
 
 	background: #F37925;
@@ -107,10 +114,10 @@ h1{
 
 .m3{
 	float: right;
-
-	width: 50%;
+	padding-left: 2%;
+	width: 35%;
 	height: 81px;
-	margin-top: 5%;
+	margin-top: 3%;
 	border-radius: 8px 0 0 8px;
 
 	background: #FAC670;
