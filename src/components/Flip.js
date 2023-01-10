@@ -11,7 +11,7 @@ setModifPage
 		<div class="all" id='1'>
 			<div class="content">
 				<div class="RectangleGauche">
-					<img src='/logonb.png' class="logo"></img>
+					<img src='/logonb.png' class="logo" alt='logo_flip'></img>
 					<h1>Music is also shared through <span>the eyes</span> </h1>
 					<p class="intro">
 						Our website allows artists to create unique and original album covers using 
@@ -39,12 +39,18 @@ setModifPage
 
 					<div class="RectMusic">
 						<div class="RectMusic1"></div>
+						<div class="RectMusic2"></div>
+						<div class="RectMusic3"></div>
+						<div class="RectMusic4"></div>
+						<div class="RectMusic5"></div>
+						<div class="RectMusic6"></div>
+						<div class="RectMusic7"></div>
 					</div>
 				</div>
 			</div>
 			<div class="Content2" id="2">
 				<div class="Gauche2">
-					<img src='/coverdesign.png' class='coverdesign'></img>
+					<img src='/coverdesign.png' class='coverdesign' alt='cover design'></img>
 					<p class="intro">
 						A few minutes, some inspiration, and a bit of creativity are all you need.
 					</p>
@@ -65,7 +71,7 @@ setModifPage
 					</p>
 				</div>
 				<div class="Droit3">
-					<img src='\fondbas.png' class='fondbas'></img>
+					<img src='\fondbas.png' class='fondbas' alt='illustration'></img>
 				</div>
 			</div>
 		</div>

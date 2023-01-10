@@ -144,6 +144,93 @@ line-height: 34px;
 	justify-content: center;
 }
 
+.RectMusic{
+	height: 85vh;
+	width: 70%;
+	margin: auto;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+/*////////////////////////////////
+
+Animation rectangle page d'accueil
+
+////////////////////////////////*/
+.RectMusic1 {
+	height: 30vh;
+	width: 50px;
+	background-color: #FAC670;
+	animation: grow-and-shrink 2s linear infinite;
+}
+
+.RectMusic2 {
+	height: 30vh;
+	width: 50px;
+	background-color: #91C3CE;
+	animation: grow-and-shrink 3.5s linear infinite;
+}
+
+.RectMusic3 {
+	height: 30vh;
+	width: 50px;
+	background-color: #F37925;
+	animation: grow-and-shrink 2.5s linear infinite;
+}
+
+.RectMusic4 {
+	height: 30vh;
+	width: 50px;
+	background-color: #F32C2C;
+	animation: grow-and-shrink 1.3s linear infinite;
+}
+
+.RectMusic5 {
+	height: 30vh;
+	width: 50px;
+	background-color: #F37925;
+	animation: grow-and-shrink 1.8s linear infinite;
+}
+
+.RectMusic6 {
+	height: 30vh;
+	width: 50px;
+	background-color: #91C3CE;
+	animation: grow-and-shrink 3s linear infinite;
+}
+
+.RectMusic7 {
+	height: 30vh;
+	width: 50px;
+	background-color: #FAC670;
+	animation: grow-and-shrink 4s linear infinite;
+}
+
+
+
+
+@keyframes grow-and-shrink {
+	0% { /* état de départ */
+	  height: 7vh;
+	}
+	50% { /* état intermédiaire, atteint au milieu de l'animation */
+	  height: 25vh;
+	}
+	100% { /* état final, atteint à la fin de l'animation */
+	  height: 7vh;
+	}
+}
+
+
+
+
+/*///////////////////////////////////////
+
+Deuxième BLOC
+
+//////////////////////////////////////*/
+
 
 .Content2{
 height: 100vh;
