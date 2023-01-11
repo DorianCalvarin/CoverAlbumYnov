@@ -58,7 +58,7 @@ setModifPage
 				<div class="Droit2">
 					<h2>Start building your <span>unique</span> album cover </h2>
 					<div class="GetStart" onClick={() => setModifPage("Creationalbum")}>
-						<button>Get started</button>
+						<button class="custom-btn btn-15">Get started</button>
 					</div>
 				</div>
 			</div>
