@@ -38,19 +38,9 @@ function Creationalbum() {
                 <div class="box6"><b></b></div>
             </div>   
 
-            <div class="Ariane"> 
-                <h1 class="Couleurfond">Couleur de fond</h1>
-                <div class="5rectangles">
-                    <div class="R1"></div>
-                    <div class="R2"></div>
-                    <div class="R3"></div>
-                    <div class="R4"></div>
-                    <div class="R5"></div>
-                </div>
-            </div>
-
+            
             <div class="Etape1">
-                {Etape >= 1 && <Fond setEtape={setEtape} Etape={Etape}></Fond>}
+                {Etape == 1 && <Fond setEtape={setEtape} Etape={Etape}></Fond>}
             </div>
             <div class="Etape2">
                 {Etape >= 2 && <Motifs setEtape={setEtape} Etape={Etape}></Motifs>}
