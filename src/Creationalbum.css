@@ -280,32 +280,6 @@ top: 50%;
     -o-animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
     animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
   }
-  
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
 
 
   .box3{
@@ -329,32 +303,6 @@ top: 50%;
     -moz-animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
     -o-animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
     animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
-  }
-  
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
   }
 
   .box4{
@@ -382,32 +330,6 @@ top: 50%;
     animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
   }
   
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-
     .box5{
     margin: 0 auto;
     width: 100%;
@@ -429,32 +351,6 @@ top: 50%;
     -moz-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
     -o-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
     animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
-  }
-  
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
   }
 
   .box6 {
@@ -481,33 +377,6 @@ top: 50%;
     -o-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
     animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
   }
-  
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-
   .Album {
 
     position: absolute;
