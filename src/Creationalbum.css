@@ -1,229 +1,197 @@
 html, body{
-    margin : 0;
-    padding : 0;
-
-    background-color: #252525;
+  margin : 0;
+  padding : 0;
+  background-color: #252525;
+  width: 100%;
+  height: 100%;
 }
 
 .Ariane{
-    Display: flex;
-    justify-content: center;
-    background-color: #252525;
-    
-    
+  Display: flex;
+  justify-content: center;
+  background-color: #252525;
 }
 
 .R1{
-
-    position: absolute;
-width: 60px;
-height: 10px;
-left: 530px;
-top: 110px;
-
-background: #F32C2C;
+  width: 60px;
+  height: 10px;
+  background: #F32C2C;
 }
 
 .R4{ 
-    
-    position: absolute;
-width: 60px;
-height: 10px;
-left: 690px;
-top: 110px;
-
-background: #F3F3F3;
-opacity: 0.2;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background: #F3F3F3;
+  opacity: 0.2;
 }
 
 .R3{
-
-position: absolute;
-width: 60px;
-height: 10px;
-left: 770px;
-top: 110px;
-
-background: #F3F3F3;
-opacity: 0.2;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background: #F3F3F3;
+  opacity: 0.2;
 }
 
 .R2{
-
-    position: absolute;
-width: 60px;
-height: 10px;
-left: 610px;
-top: 110px;
-
-background: #F3F3F3;
-opacity: 0.2;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background: #F3F3F3;
+  opacity: 0.2;
 }
 
 .R5{
-
-
-position: absolute;
-width: 60px;
-height: 10px;
-left: 850px;
-top: 110px;
-
-background: #F3F3F3;
-opacity: 0.2;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background: #F3F3F3;
+  opacity: 0.2;
 }
 
 .Couleurfond {
-
-display: flex;
-justify-content: center;
-position: absolute;
-width: 300px;
-height: 38px;
-padding: 0;
-top: 40px;
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 38px;
-text-align: center;
-letter-spacing: 0.1px;
-
-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 300px;
+  height: 38px;
+  padding: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
 }
 
 .Logo {
-
-    position: absolute;
-width: 138px;
-height: 80px;
-left: 5vw;
-top: 3vh;
-
-    
+  position: absolute;
+  width: 138px;
+  height: 80px;
+  left: 5vw;
+  top: 3vh;
 }
+
 .Rectangle1 {
-    position: absolute;
-width: 180px;
-height: 14px;
-left:61vw;
-top: 28vh;
+  position: absolute;
+  width: 180px;
+  height: 14px;
+  left:61vw;
+  top: 28vh;
 }
 
 .Rectangle2 {
-    position: absolute;
-width: 99.09px;
-height: 14px;
-left: 80vw;
-top: 90vh;
+  position: absolute;
+  width: 99.09px;
+  height: 14px;
+  left: 80vw;
+  top: 90vh;
 
-background: #F37925;
-transform: rotate(-127.67deg);
+  background: #F37925;
+  transform: rotate(-127.67deg);
 }
 
 .Rectangle4 {
-    position: absolute;
-    width: 99.09px;
-    height: 14px;
-    left: 60vh;
-    top: 43vh;  
+  position: absolute;
+  width: 99.09px;
+  height: 14px;
+  left: 60vh;
+  top: 43vh;  
 }
 
 .next {
-    height: 100%;
+  height: 100%;
+  z-index: 60;
 }
 
 .RecGauche { 
-position: absolute;
-width: 5%;
-height: 100%;
-left: 0%;
-top: 0%;
-pointer-events: all;
-background: #D9D9D9;
-opacity: 0;
-transition: opacity 0.2s;
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  pointer-events: all;
+  background: #D9D9D9;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 60;
 }
 
 .RecGauche:hover{
-  opacity: 0.1;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .RecDroite { 
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  right: 0%;
+  top: 0%;
 
-    
-    position: absolute;
-width: 5%;
-height: 100%;
-right: 0%;
-top: 0%;
-
-background: #D9D9D9;
-opacity: 0;
-transition: opacity 0.2s;
+  background: #D9D9D9;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 60;
 }
 
 .RecDroite:hover{
-  opacity: 0.1;
+  opacity: 0.5;
+  cursor: pointer;
 }
-.Fleches {
 
-    background-color: #252525;
-      pointer-events: none;
-    }
+.Fleches {
+  background-color: #252525;
+  pointer-events: none;
+}
 
 .FlecheD {
-
-    position: absolute;
-width: 15px;
-height: 30px;
-right: 2%;
-top: 50%;
-
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  right: 2%;
+  top: 50%;
 }
 
 .FlecheG {
-
-    position: absolute;
-width: 15px;
-height: 30px;
-left: 1.5%;
-top: 50%;
-
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  left: 1.5%;
+  top: 50%;
 }
 
 
-  .box{
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-    pointer-events: none;
-  }
+.box{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+  pointer-events: none;
+}
   
-  .AnimFormes div{
-    pointer-events: none;
-  }
+.AnimFormes div{
+  pointer-events: none;
+}
 
   
-  .box b {
-
-
-    animation: rotation 2s infinite linear;
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 0%;
-    background-color: rgba(238, 138, 24, 0.733);
-    position: absolute;
-    -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
-    -moz-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
-    -o-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
-    animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
+.box b {
+  animation: rotation 2s infinite linear;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  background-color: rgba(238, 138, 24, 0.733);
+  position: absolute;
+  -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
+  -moz-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
+  -o-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
+  animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
   }
   
   @-webkit-keyframes moveX {
@@ -362,33 +330,69 @@ top: 50%;
     overflow: hidden;
   }
   
-  .box6 b {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-style: solid;
-    border-width: 50px 50px 50px 50px;
-    border-color: transparent transparent transparent transparent;
-    border-radius: 100%;
-    background-color: #91C3CE;
-    position: absolute;
-    -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-    -moz-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-    -o-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-    animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-  }
-  .Album {
+.box6 b {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 50px 50px 50px 50px;
+  border-color: transparent transparent transparent transparent;
+  border-radius: 100%;
+  background-color: #91C3CE;
+  position: absolute;
+  -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
+  -moz-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
+  -o-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
+  animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
+}
 
-    position: absolute;
-width: 25%;
-height: 50%;
-display: flex;
-left: 37.5%;
-top: 22%;
-background: #F3F3F3;
-opacity: 1;
+.Album {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  left: 37.5%;
+  top: 22%;
+  background: #F3F3F3;
+  opacity: 1;
+}
 
-z-index: 100;
+#color-picker{
+  margin-top: 50vh;
+  margin-left: 10vw;
+}
 
+.Etape1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 50;
+}
 
-  }
+.Etape2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 40;
+}
+
+.Etape3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 30;
+}
+
+.Etape4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+
+.Etape5{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
