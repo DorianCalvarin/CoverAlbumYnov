@@ -40,21 +40,16 @@ function Creationalbum() {
             </div>
 
             
-            <div class="Etape1">
-                {Etape >= 1 && <Fond setEtape={setEtape} Etape={Etape}></Fond>}
-            </div>
-            <div class="Etape2">
-                {Etape >= 2 && <Motifs setEtape={setEtape} Etape={Etape}></Motifs>}
-            </div>
-            <div class="Etape3">
-                {Etape >= 3 && <Texte setEtape={setEtape} Etape={Etape}></Texte>}
-            </div>
-            <div class="Etape4">
-                {Etape >= 4 && <Filtre setEtape={setEtape} Etape={Etape}></Filtre>} 
-            </div>
-            <div class="Etape5">
-                {Etape >= 5 && <Telechargement setEtape={setEtape} Etape={Etape}></Telechargement>}
-            </div>
+            
+            {Etape >= 1 && <div className='Etape1'><Fond setEtape={setEtape} Etape={Etape}></Fond></div>}
+
+            {Etape >= 2 &&  <div className='Etape2'><Motifs setEtape={setEtape} Etape={Etape}></Motifs></div>}
+
+            {Etape >= 3 && <div className='Etape3'><Texte setEtape={setEtape} Etape={Etape}></Texte></div>}
+            
+            {Etape >= 4 && <div className='Etape4'> <Filtre setEtape={setEtape} Etape={Etape}></Filtre></div>} 
+
+            {Etape >= 5 && <div className='Etape5'> <Telechargement setEtape={setEtape} Etape={Etape}></Telechargement></div>}
 
         </div>
     );
