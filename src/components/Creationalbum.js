@@ -14,14 +14,14 @@ function Creationalbum() {
         <div class="All">
             <div class="next">
                 {Etape > 1 && <div class="RecGauche"onClick={() => setEtape(Etape-1)}></div>}
-                <div class="RecDroite"onClick={() => setEtape(Etape+1)}></div>
+                {Etape < 5 &&<div class="RecDroite"onClick={() => setEtape(Etape+1)}></div>}
                 <div class="Fleches">
                     <div Class="FlecheG">
                     {Etape > 1 && <img src="/FlecheG.png"onClick={() => setEtape(Etape-1)}></img>}
                     
                     </div>
                     <div class="FlecheD">
-                        <img src="/FlecheD.png"></img> 
+                        {Etape < 5 && <img src="/FlecheD.png"onClick={() => setEtape(Etape+1)}></img>}
                     </div>
                 </div>
             </div>   
