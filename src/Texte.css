@@ -3,3 +3,39 @@ html, body{
     padding : 0;
 
 }
+
+
+.R1{
+    width: 60px;
+    height: 10px;
+    background: #F3F3F3;
+    opacity: 0.2;
+}
+  
+.R4{ 
+    width: 60px;
+    height: 10px;
+    background: #F3F3F3;
+    opacity: 0.2;
+}
+  
+.R3{
+    width: 60px;
+    height: 10px;
+    background: #F33C2C;
+    opacity: 1;
+}
+  
+.R2{
+    width: 60px;
+    height: 10px;
+    background: #F3F3F3;
+    opacity: 0.2;
+}
+  
+.R5{
+    width: 60px;
+    height: 10px;
+    background: #F3F3F3;
+    opacity: 0.2;
+}
