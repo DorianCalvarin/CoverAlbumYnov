@@ -14,7 +14,6 @@ function Creationalbum() {
         <div class="All">
             <div class="next">
                 {Etape > 1 && <div class="RecGauche"onClick={() => setEtape(Etape-1)}></div>}
-                
                 <div class="RecDroite"onClick={() => setEtape(Etape+1)}></div>
                 <div class="Fleches">
                     <div Class="FlecheG">
