@@ -16,6 +16,9 @@ function Texte(setEtape, Etape) {
                     <div class="R5"></div>
                 </div>
             </div>
+            <form class="Text">
+                <input type="text" id="select-text" name="text"/>
+            </form>
             </>
         </div>
 
