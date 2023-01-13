@@ -6,10 +6,11 @@ function Fond({setEtape, Etape}) {
     
     return (
         <div>
-            {Etape === 1 && 
                 <>
             <div class="Ariane"> 
-                <h1 class="Couleurfond">Couleur de fond</h1>
+            {Etape === 1 && 
+                <h1 class="Couleurfond">Couleur de fond</h1>}
+            {Etape === 1 && 
                 <div class="rectangles5">
                     <div class="R1"></div>
                     <div class="R2"></div>
@@ -17,17 +18,20 @@ function Fond({setEtape, Etape}) {
                     <div class="R4"></div>
                     <div class="R5"></div>
                 </div>
+                }
             </div>
 
             
             <form>
-                <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>
+            {Etape === 1 && 
+                <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}
                 <div class="Album" style={{backgroundColor: Couleur}}></div>
             </form>
+        
             
         </>
 
-        }
+        
         </div>
 
     );

@@ -17,7 +17,8 @@ function Creationalbum() {
                 <div class="RecDroite"onClick={() => setEtape(Etape+1)}></div>
                 <div class="Fleches">
                     <div Class="FlecheG">
-                        <img src="/FlecheG.png"></img>
+                    {Etape > 1 && <img src="/FlecheG.png"onClick={() => setEtape(Etape-1)}></img>}
+                    
                     </div>
                     <div class="FlecheD">
                         <img src="/FlecheD.png"></img> 
@@ -40,7 +41,7 @@ function Creationalbum() {
 
             
             <div class="Etape1">
-                {Etape == 1 && <Fond setEtape={setEtape} Etape={Etape}></Fond>}
+                {Etape >= 1 && <Fond setEtape={setEtape} Etape={Etape}></Fond>}
             </div>
             <div class="Etape2">
                 {Etape >= 2 && <Motifs setEtape={setEtape} Etape={Etape}></Motifs>}
