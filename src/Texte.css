@@ -8,8 +8,7 @@ html, body{
 .R1{
     width: 60px;
     height: 10px;
-    background: #F3F3F3;
-    opacity: 0.2;
+    background: #F33C2C;
 }
   
 .R4{ 
@@ -22,8 +21,8 @@ html, body{
 .R3{
     width: 60px;
     height: 10px;
-    background: #F33C2C;
-    opacity: 1;
+    background: #F3F3F3;
+    opacity: 0.2;
 }
   
 .R2{
