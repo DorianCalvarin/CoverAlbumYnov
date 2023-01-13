@@ -75,33 +75,6 @@ html, body{
   top: 3vh;
 }
 
-.Rectangle1 {
-  position: absolute;
-  width: 180px;
-  height: 14px;
-  left:61vw;
-  top: 28vh;
-}
-
-.Rectangle2 {
-  position: absolute;
-  width: 99.09px;
-  height: 14px;
-  left: 80vw;
-  top: 90vh;
-
-  background: #F37925;
-  transform: rotate(-127.67deg);
-}
-
-.Rectangle4 {
-  position: absolute;
-  width: 99.09px;
-  height: 14px;
-  left: 60vh;
-  top: 43vh;  
-}
-
 .next {
   height: 100%;
   z-index: 60;

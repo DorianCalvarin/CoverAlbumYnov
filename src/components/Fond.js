@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Fond.css';
-import '../Creationalbum.css';
 function Fond({setEtape, Etape}) {
 
     const [Couleur, setCouleur] = React.useState("White");

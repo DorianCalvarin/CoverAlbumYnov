@@ -1,6 +1,5 @@
 import React from 'react';
 import '../flip.css';
-import Creationalbum from './Creationalbum.js';
 
 
 
