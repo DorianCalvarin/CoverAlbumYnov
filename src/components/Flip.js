@@ -7,70 +7,70 @@ function Flip({
 setModifPage
 }) {
   return (
-		<div class="all" id='1'>
-			<div class="content">
-				<div class="RectangleGauche">
-					<img src='/logonb.png' class="logo" alt='logo_flip'></img>
+		<div className='all' id='1'>
+			<div className='content'>
+				<div className='RectangleGauche'>
+					<img src='/logonb.png' className='logo' alt='logo_flip'></img>
 					<h1>Music is also shared through <span>the eyes</span> </h1>
-					<p class="intro">
+					<p className='intro'>
 						Our website allows artists to create unique and original album covers using 
 						our online generative design tool.
 					</p>
 				</div>
-				<div class="Droit">
-					<div class="Menu">
-						<a href='#1'class="lien1">
-							<div class="m1">
+				<div className='Droit'>
+					<div className='Menu'>
+						<a href='#1'className='lien1'>
+							<div className='m1'>
 								<p>What is Flip ?</p>
 							</div>
 						</a>
-						<a href='#2' class="lien2">
-							<div class="m2">
+						<a href='#2' className='lien2'>
+							<div className='m2'>
 								<p>Album cover generator</p>
 							</div>
 						</a>
-						<a href='#3' class="lien3">
-							<div class="m3">
+						<a href='#3' className='lien3'>
+							<div className='m3'>
 								<p>Generative Design</p>
 							</div>
 						</a>
 					</div>
 
-					<div class="RectMusic">
-						<div class="RectMusic1"></div>
-						<div class="RectMusic2"></div>
-						<div class="RectMusic3"></div>
-						<div class="RectMusic4"></div>
-						<div class="RectMusic5"></div>
-						<div class="RectMusic6"></div>
-						<div class="RectMusic7"></div>
+					<div className='RectMusic'>
+						<div className='RectMusic1'></div>
+						<div className='RectMusic2'></div>
+						<div className='RectMusic3'></div>
+						<div className='RectMusic4'></div>
+						<div className='RectMusic5'></div>
+						<div className='RectMusic6'></div>
+						<div className='RectMusic7'></div>
 					</div>
 				</div>
 			</div>
-			<div class="Content2" id="2">
-				<div class="Gauche2">
-					<img src='/coverdesign.png' class='coverdesign' alt='cover design'></img>
-					<p class="intro">
+			<div className='Content2' id="2">
+				<div className='Gauche2'>
+					<img src='/coverdesign.png' className='coverdesign' alt='cover design'></img>
+					<p className='intro'>
 						A few minutes, some inspiration, and a bit of creativity are all you need.
 					</p>
 				</div>
-				<div class="Droit2">
+				<div className='Droit2'>
 					<h2>Start building your <span>unique</span> album cover </h2>
-					<div class="GetStart" onClick={() => setModifPage("Creationalbum")}>
-						<button class="custom-btn btn-15">Get started</button>
+					<div className='GetStart' onClick={() => setModifPage("Creationalbum")}>
+						<button className='custom-btn btn-15'>Get started</button>
 					</div>
 				</div>
 			</div>
-			<div class="Content3" id='3'>
-				<div class="Gauche3">
+			<div className='Content3' id='3'>
+				<div className='Gauche3'>
 					<h3>How does <span>generative design</span> works? </h3>
-					<p class="intro">
+					<p className='intro'>
 						It involves feeding the software with certain parameters and constraints, 
 						and then letting it generate a variety of design options based on those parameters.
 					</p>
 				</div>
-				<div class="Droit3">
-					<img src='\fondbas.png' class='fondbas' alt='illustration'></img>
+				<div className='Droit3'>
+					<img src='\fondbas.png' className='fondbas' alt='illustration'></img>
 				</div>
 			</div>
 		</div>

@@ -183,7 +183,7 @@ html, body{
   height: 180px;
   border-radius: 0%;
   rotate: 10deg;
-  background-color: red;
+  background-color: #F32C2C;
   position: absolute;
   -webkit-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
   -moz-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
@@ -292,7 +292,7 @@ html, body{
   display : inline-block;
   height : 0;
   width : 0;
-  border-bottom : 150px solid red;
+  border-bottom : 150px solid #F32C2C;
   border-left : 150px solid transparent;
   rotate: 80deg;
   position: absolute;
