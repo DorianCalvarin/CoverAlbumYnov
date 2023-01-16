@@ -107,7 +107,6 @@ html, body{
   top: 50%;
 }
 
-
 .box{
   margin: 0 auto;
   width: 100%;
@@ -122,7 +121,6 @@ html, body{
   pointer-events: none;
 }
 
-  
 .box b {
   animation: rotation 2s infinite linear;
   display: block;
@@ -135,143 +133,183 @@ html, body{
   -moz-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
   -o-animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
   animation: moveX 8s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
-  }
+  animation-direction: alternate-reverse;
+}
   
-  @-webkit-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-moz-keyframes moveX {
-    from { left: 0; } to { left: 1440px; }
-  }
-  @-o-keyframes moveX {
-    from { left: 0; } to { left: 100% }
-  }
-  @keyframes moveX {
-    from { left: 0; } to { left: 100%; }
-  }
-  
-  @-webkit-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-moz-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @-o-keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes moveY {
-    from { top: 0; } to { top: 100vh; }
-  }
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    } to { transform: rotate(360deg);  }
-  }
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 100%; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 100%; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 100% }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 100%; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 100vh; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 100vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 100vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 100vh; }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  } to { transform: rotate(360deg);  }
+}
 
 
-  .box2{
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-  }
+.box2{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
   
-  .box2 b {
-    display: block;
-    width: 12px;
-    height: 180px;
-    border-radius: 0%;
-    rotate: 10deg;
-    background-color: red;
-    position: absolute;
-    -webkit-animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
-    -moz-animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
-    -o-animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
-    animation: moveX 20s linear 0s infinite alternate, moveY 16s linear 0s infinite alternate;
+.box2 b {
+  display: block;
+  width: 12px;
+  height: 180px;
+  border-radius: 0%;
+  rotate: 10deg;
+  background-color: red;
+  position: absolute;
+  -webkit-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
+  -moz-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
+  -o-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
+  animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
+}
+
+@keyframes rotate {
+  100% {
+      transform: rotate(1turn);
   }
+}
+
+@-webkit-keyframes moveX2 {
+  from { right: 0; } to { right: 100%; }
+}
+@-moz-keyframes moveX2 {
+  from { right: 0; } to { right: 100%; }
+}
+@-o-keyframes moveX2 {
+  from { right: 0; } to { right: 100% }
+}
+@keyframes moveX2 {
+  from { right: 0; } to { right: 100%; }
+}
+
+@-webkit-keyframes moveY2 {
+  from { top: 0; } to { top: 100vh; }
+}
+@-moz-keyframes moveY2 {
+  from { top: 0; } to { top: 100vh; }
+}
+@-o-keyframes moveY2 {
+  from { top: 0; } to { top: 100vh; }
+}
+@keyframes moveY2 {
+  from { top: 0; } to { top: 100vh; }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  } to { transform: rotate(360deg);  }
+}
 
 
-  .box3{
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-  }
+.box3{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
   
-  .box3 b {
-    display: block;
-    width: 80px;
-    height: 80px;
-    border-radius: 0%;
-    rotate: 45  deg;
-    background-color: #91C3CE;
-    position: absolute;
-    -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
-    -moz-animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
-    -o-animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
-    animation: moveX 8s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
-  }
+.box3 b {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 0%;
+  rotate: 45  deg;
+  background-color: #91C3CE;
+  position: absolute;
+  -webkit-animation: moveX2 8s linear 0s infinite alternate, moveY2 7s linear 0s infinite alternate;
+  -moz-animation: moveX2 8s linear 0s infinite alternate, moveY2 7s linear 0s infinite alternate;
+  -o-animation: moveX2 8s linear 0s infinite alternate, moveY2 7s linear 0s infinite alternate;
+  animation: moveX2 8s linear 0s infinite alternate, moveY2 7s linear 0s infinite alternate;
+  animation-direction: alternate-reverse;
+}
 
-  .box4{
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-  }
+.box4{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
   
-  .box4 b {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-style: solid;
-    border-width: 100px 100px 100px 100px;
-    border-color: transparent transparent transparent transparent;
-    border-radius: 100%;
-    background-color: #FAC670;
-    position: absolute;
-    -webkit-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
-    -moz-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
-    -o-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
-    animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
-  }
+.box4 b {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 100px 100px 100px 100px;
+  border-color: transparent transparent transparent transparent;
+  border-radius: 100%;
+  background-color: #FAC670;
+  position: absolute;
+  -webkit-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
+  -moz-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
+  -o-animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
+  animation: moveX 13s linear 0s infinite alternate, moveY 12s linear 0s infinite alternate;
+  animation-direction: alternate-reverse;
+}
   
-    .box5{
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-  }
+.box5{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
   
-  .box5 b {
-    display : inline-block;
-    height : 0;
-    width : 0;
-    border-bottom : 150px solid red;
-    border-left : 150px solid transparent;
-    rotate: 80deg;
-    position: absolute;
-    -webkit-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
-    -moz-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
-    -o-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
-    animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
-  }
+.box5 b {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-bottom : 150px solid red;
+  border-left : 150px solid transparent;
+  rotate: 80deg;
+  position: absolute;
+  -webkit-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
+  -moz-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
+  -o-animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
+  animation: moveX 28s linear 0s infinite alternate, moveY 22s linear 0s infinite alternate;
+}
 
-  .box6 {
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    border: 1px solid #252525;
-    overflow: hidden;
-  }
+.box6 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
   
 .box6 b {
   display: block;
@@ -283,10 +321,10 @@ html, body{
   border-radius: 100%;
   background-color: #91C3CE;
   position: absolute;
-  -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-  -moz-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-  -o-animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
-  animation: moveX 8s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
+  -webkit-animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
+  -moz-animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
+  -o-animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
+  animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
 }
 
 .Album {

@@ -11,39 +11,38 @@ function Creationalbum() {
     const [Etape, setEtape] = React.useState(1);
 
     return (
-        <div class="All">
-            <div class="next">
-                {Etape > 1 && <div class="RecGauche"onClick={() => setEtape(Etape-1)}></div>}
-                {Etape < 5 &&<div class="RecDroite"onClick={() => setEtape(Etape+1)}></div>}
-                <div class="Fleches">
-                    <div Class="FlecheG">
-                    {Etape > 1 && <img src="/FlecheG.png"onClick={() => setEtape(Etape-1)}></img>}
-                    
+        <div className='All'>
+            <div className='next'>
+                {Etape > 1 && <div className='RecGauche'onClick={() => setEtape(Etape-1)}></div>}
+                {Etape < 5 &&<div className='RecDroite'onClick={() => setEtape(Etape+1)}></div>}
+                <div className='Fleches'>
+                    <div className='FlecheG'>
+                        {Etape > 1 && <img src="/FlecheG.png" onClick={() => setEtape(Etape-1)}  alt='fleche clicable gauche'></img>}
                     </div>
-                    <div class="FlecheD">
-                        {Etape < 5 && <img src="/FlecheD.png"onClick={() => setEtape(Etape+1)}></img>}
+                    <div className='FlecheD'>
+                        {Etape < 5 && <img src="/FlecheD.png" onClick={() => setEtape(Etape+1)}  alt='Fleche clibable Droite'></img>}
                     </div>
                 </div>
             </div>   
 
-            <div class="Logo" >
-                <img src="/logoflip.png"></img>  
+            <div className='Logo'>
+                <img src="/logoflip.png" alt='logo de flip'></img>  
             </div> 
-
-            <div class="AnimFormes">
-                <div class="box"><b></b></div>
-                <div class="box2"><b></b></div>
-                <div class="box3"><b></b></div>
-                <div class="box4"><b></b></div>
-                <div class="box5"><b></b></div>
-                <div class="box6"><b></b></div>
+            
+            <div className='AnimFormes'>
+                <div className='box'><b></b></div>
+                <div className='box2'><b></b></div>
+                <div className='box3'><b></b></div>
+                <div className='box4'><b></b></div>
+                <div className='box5'><b></b></div>
+                <div className='box6'><b></b></div>
             </div>
 
             
             
             {Etape >= 1 && <div className='Etape1'><Fond setEtape={setEtape} Etape={Etape}></Fond></div>}
 
-            {Etape >= 2 &&  <div className='Etape2'><Motifs setEtape={setEtape} Etape={Etape}></Motifs></div>}
+            {Etape >= 2 && <div className='Etape2'><Motifs setEtape={setEtape} Etape={Etape}></Motifs></div>}
 
             {Etape >= 3 && <div className='Etape3'><Texte setEtape={setEtape} Etape={Etape}></Texte></div>}
             
