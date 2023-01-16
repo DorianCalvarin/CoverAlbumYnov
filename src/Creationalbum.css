@@ -45,6 +45,13 @@ html, body{
   top: 3vh;
 }
 
+/*////////////////////////////////
+
+bouton pour passer à l'étape suivante
+
+////////////////////////////////*/
+
+
 .next {
   height: 100%;
   z-index: 60;
@@ -107,6 +114,13 @@ html, body{
   top: 50%;
 }
 
+/*////////////////////////////////
+
+Objet et animation en background
+
+////////////////////////////////*/
+
+
 .box{
   margin: 0 auto;
   width: 100%;
@@ -161,11 +175,6 @@ html, body{
 @keyframes moveY {
   from { top: 0; } to { top: 100vh; }
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  } to { transform: rotate(360deg);  }
-}
 
 
 .box2{
@@ -189,12 +198,6 @@ html, body{
   -moz-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
   -o-animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
   animation: moveX2 20s linear 0s infinite alternate, moveY2 16s linear 0s infinite alternate;
-}
-
-@keyframes rotate {
-  100% {
-      transform: rotate(1turn);
-  }
 }
 
 @-webkit-keyframes moveX2 {
@@ -221,11 +224,6 @@ html, body{
 }
 @keyframes moveY2 {
   from { top: 0; } to { top: 100vh; }
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  } to { transform: rotate(360deg);  }
 }
 
 
@@ -326,6 +324,14 @@ html, body{
   -o-animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
   animation: moveX2 8s linear 0s infinite alternate, moveY2 6s linear 0s infinite alternate;
 }
+
+
+/*////////////////////////////////
+
+Cover customisée & les différentes étapes
+
+////////////////////////////////*/
+
 
 .Album {
   position: absolute;
