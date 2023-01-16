@@ -1,9 +1,23 @@
 import React from 'react';
 import '../Filtre.css';
-function Filtre(setEtape, Etape) { 
+function Filtre({setEtape, Etape}) { 
     return (
         <div>
-            {Etape === 4 && <h1>HELLO</h1>}
+            <>
+            <div class="Ariane"> 
+            {Etape === 4 && <h1 class="Couleurfond">Filtre</h1>}
+            {Etape === 4 && 
+                <div class="rectangles5">
+                    <div class="R4"></div>
+                    <div class="R2"></div>
+                    <div class="R3"></div>
+                    <div class="R1"></div>
+                    <div class="R5"></div>
+                </div>
+                }
+            </div>
+
+            </>
         </div>
 
     );

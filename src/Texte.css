@@ -56,4 +56,18 @@ html, body{
     left: 37.5%;
     top: 22%;
     opacity: 1;
-  }
+}
+
+.Text{
+    display: flex;
+    height: 60vh;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TitreAlbum{
+    color: white;
+    font-size: 1.5em;
+    font-family: lato;
+}
