@@ -4,25 +4,22 @@ function Motifs({setEtape, Etape}) {
     return (
         <div>
             <>
-            <div class="Ariane"> 
-            {Etape === 2 && <h1 class="Couleurfond">Motifs</h1>}
-            {Etape === 2 && 
-                <div class="rectangles5">
-                    <div class="R2"></div>
-                    <div class="R1"></div>
-                    <div class="R3"></div>
-                    <div class="R4"></div>
-                    <div class="R5"></div>
+                <div className='Ariane'> 
+                    {Etape === 2 && <h1 className='Couleurfond'>Motifs</h1>}
+                    {Etape === 2 && 
+                        <div className='rectangles5'>
+                            <div className='R2'></div>
+                            <div className='R1'></div>
+                            <div className='R3'></div>
+                            <div className='R4'></div>
+                            <div className='R5'></div>
+                        </div>
+                    }
                 </div>
-                }
-            </div>
-
             </>
+            
         </div>
-
     );
-
-
 }
 
 

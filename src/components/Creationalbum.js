@@ -37,7 +37,7 @@ function Creationalbum() {
                 <div className='box5'><b></b></div>
                 <div className='box6'><b></b></div>
             </div>
-
+        
             
             
             {Etape >= 1 && <div className='Etape1'><Fond setEtape={setEtape} Etape={Etape}></Fond></div>}

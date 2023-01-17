@@ -2,8 +2,14 @@ html, body{
     margin : 0;
     padding : 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
+
+/*////////////////////////////////
+
+Menu
+
+////////////////////////////////*/
 
 .R1{
     width: 60px;
@@ -38,6 +44,12 @@ html, body{
     background: #F3F3F3;
     opacity: 0.2;
 }
+
+/*////////////////////////////////
+
+Modifier la couleur de fond de la cover
+
+////////////////////////////////*/
 
 .BlocColorPicker{
     display: flex;

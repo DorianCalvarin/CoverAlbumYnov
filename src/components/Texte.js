@@ -8,23 +8,23 @@ function Texte({setEtape, Etape}) {
         <div>
 
             <>
-            <div class="Ariane"> 
-            {Etape === 3 && <h1 class="Couleurfond">Texte</h1>}
-            {Etape === 3 && 
-                <div class="rectangles5">
-                    <div class="R3"></div>
-                    <div class="R2"></div>
-                    <div class="R1"></div>
-                    <div class="R4"></div>
-                    <div class="R5"></div>
-                </div>
+            <div className='Ariane'> 
+                {Etape === 3 && <h1 className='Couleurfond'>Texte</h1>}
+                {Etape === 3 && 
+                    <div className='rectangles5'>
+                        <div className='R3'></div>
+                        <div className='R2'></div>
+                        <div className='R1'></div>
+                        <div className='R4'></div>
+                        <div className='R5'></div>
+                    </div>
                 }
             </div>
-            <form class="Text">
+            <form className='Text'>
                 {Etape === 3 &&
-                <p class="TitreAlbum">Ajoute du texte</p>}
+                    <p className='TitreAlbum'>Ajoute du texte</p>}
                 {Etape === 3 &&
-                <input type="text" id="select-text" name="text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
+                    <input type="text" id="select-text" name="text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
                 <div className='AlbumText'><p>{Texte}</p></div>
             </form>
             </>

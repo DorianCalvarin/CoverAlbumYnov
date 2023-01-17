@@ -15,7 +15,7 @@ function Fond({setEtape, Etape}) {
                     <div className='R2'></div>
                     <div className='R3'></div>
                     <div className='R4'></div>
-                    <div className='R5'></div>
+                    <div className='R5'></div> 
                 </div>
                 }
             </div>
