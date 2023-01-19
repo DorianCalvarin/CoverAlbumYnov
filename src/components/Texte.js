@@ -4,6 +4,12 @@ function Texte({setEtape, Etape}) {
     
     const [Texte, setTexte] = React.useState("");
     console.log(Etape)
+    const [Top, setTop] = React.useState("90%");
+    const [Left, setLeft] = React.useState("90%");
+    const [Couleur, setCouleur] = React.useState("White");
+
+
+
     return (
         <div>
 
@@ -22,10 +28,14 @@ function Texte({setEtape, Etape}) {
             </div>
             <form className='Text'>
                 {Etape === 3 &&
-                    <p className='TitreAlbum'>Ajoute du texte</p>}
+                    <p className='TitreAlbum'>Ajouter du texte</p>}
                 {Etape === 3 &&
                     <input type="text" id="select-text" name="text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
-                <div className='AlbumText'><p>{Texte}</p></div>
+                     <input type="range" id="select-text1" name="text" placeholder='Titre exemple...' onChange={(event)=>setTop(event.target.value+'%')}/>
+                     <input type="range" id="select-text2" name="text" placeholder='Titre exemple...' onChange={(event)=>setLeft(event.target.value+'%')}/>
+                     <input type="color" id="select-text3" name="text" placeholder='Titre exemple...' onChange={(event)=>setCouleur(event.target.value)}/>
+
+                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur}}>{Texte}</p></div>
             </form>
             </>
         </div>

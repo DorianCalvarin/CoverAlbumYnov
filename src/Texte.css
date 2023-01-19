@@ -17,10 +17,10 @@ html, body{
     position: absolute;
     width: 25%;
     height: 50%;
-    display: flex;
     left: 37.5%;
     top: 22%;
     opacity: 1;
+    overflow: hidden;
 }
 
 .Text{
