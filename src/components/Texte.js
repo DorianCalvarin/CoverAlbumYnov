@@ -46,7 +46,7 @@ function Texte({setEtape, Etape}) {
                 {Etape === 3 &&     
                      <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
 
-                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur, fontSize: Size}}>{Texte}</p></div>
+                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur, fontSize: Size, fontFamily: 'impact'}}>{Texte}</p></div>
             </form>
             </>
         </div>
