@@ -29,6 +29,12 @@ function Texte({setEtape, Etape}) {
             <form className='Text'>
                 {Etape === 3 &&
                     <p className='TitreAlbum'>Ajouter du texte</p>}
+                    {Etape === 3 &&
+                    <p className='Positiontop'>Position du texte</p>}
+                      {Etape === 3 &&
+                    <p className='Tailletexte'>Taille du texte</p>}
+                    
+                    
                 {Etape === 3 &&
                     <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
                 {Etape === 3 &&

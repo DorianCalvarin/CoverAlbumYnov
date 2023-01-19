@@ -27,4 +27,67 @@ html, body{
     color: white;
     font-size: 1.5em;
     font-family: lato;
+    position: absolute;
+    top: 73vh;
 }
+
+#select-text1{
+position: absolute;
+left: 20.5%;
+top: 40vh;
+}
+
+.Positiontop{
+position: absolute;
+top: 30vh;
+left: 19%;
+color: white;
+font-size: 1.5em;
+font-family: lato;
+}
+
+#select-text2{
+    position: absolute;
+    left: 15%;
+    top: 51vh;
+    rotate: 90deg;
+    background: plum;
+    }
+
+#select-text{
+    color: black;
+    font-size: 1em;
+    font-family: lato;
+    position: absolute;
+    top: 84vh;
+    align-items: center;
+
+}
+
+#select-text3{
+    position: absolute;
+    top: 83.85vh;
+    left: 57%;
+    height: 4vh;
+    width: 4vh;
+    }
+
+    #select-text4{
+        position: absolute;
+        right: 20.5%;
+        top: 40vh;
+        }
+
+.Tailletexte{
+            position: absolute;
+            top: 30vh;
+            right: 20%;
+            color: white;
+            font-size: 1.5em;
+            font-family: lato;
+            }
+            input[type=range]:-moz-range-progress {
+                height: 100;
+                background: transparent;        /* supprime barre progression avant */
+              }
+
