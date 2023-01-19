@@ -38,13 +38,15 @@ function Motifs({setEtape, Etape}) {
       i,
       x,
       y;
+    let width = window.innerWidth*0.25
+    let height = window.innerWidth*0.5
     for (i = 0; i < randomNumber(8, 12) * 2; i++) {
-      x = Math.floor(Math.random() * 350);
-      y = Math.floor(Math.random() * 350);
+      x = Math.floor(Math.random() * width);
+      y = Math.floor(Math.random() * width);
       tmp += i === 0 ? " M" : " L";
       tmp1 += i == 0 ? " M" : " L";
       tmp += " " + x + " " + y;
-      tmp1 += " " + (385 - x) + " " + y;
+      tmp1 += " " + (width - x) + " " + y;
     }
     setJsSVGpath(tmp + " " + tmp1);
   };
@@ -84,13 +86,13 @@ function Motifs({setEtape, Etape}) {
                       <div id="art">
                           <svg id="clickAbleSVG">
                           {Etape >= 2 &&
-                              <path id="jsSVGpath" fill={colors[colorSVGvalue]} d={jsSVGpath}/>}
+                              <path id="jsSVGpath" fill={colorSVGvalue} d={jsSVGpath}/>}
                           </svg>
                       </div>
                   
                       <div class="buttons">
                         {Etape === 2 &&
-                          <button onClick={()=>randomColor()}>New Random Colors</button>}
+                          <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}
                         {Etape === 2 &&
                           <button onClick={()=>generateArt()}>New Random Pattern</button>}
                       </div> 
