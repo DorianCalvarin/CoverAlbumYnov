@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Motifs.css';
+//import './Random';
 
 function Motifs({setEtape, Etape}) { 
     return (
@@ -16,8 +17,18 @@ function Motifs({setEtape, Etape}) {
                             <div className='R5'></div>
                         </div>
                     }
-
-                    
+                    {/*
+                    <div class="container">
+                        <div id="art">
+                            <svg id="clickAbleSVG" width="500" height="500" >
+                                <path id="jsSVGpath" stroke="#000" fill="green" />
+                            </svg>
+                        </div>
+                        <div class="buttons">
+                            <button onclick="randomColor()">New Random Colors</button>
+                            <button onclick="generateArt()">New Random Pattern</button>
+                        </div>
+                    </div>*/}
 
                 </div>
             </>
