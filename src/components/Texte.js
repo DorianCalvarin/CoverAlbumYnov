@@ -4,10 +4,10 @@ function Texte({setEtape, Etape}) {
     
     const [Texte, setTexte] = React.useState("");
     console.log(Etape)
-    const [Top, setTop] = React.useState("90%");
-    const [Left, setLeft] = React.useState("90%");
-    const [Couleur, setCouleur] = React.useState("White");
-
+    const [Top, setTop] = React.useState("10%");
+    const [Left, setLeft] = React.useState("10%");
+    const [Couleur, setCouleur] = React.useState("Black");
+    const [Size, setSize] = React.useState("12pt");
 
 
     return (
