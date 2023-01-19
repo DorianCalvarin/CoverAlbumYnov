@@ -23,7 +23,7 @@ function Fond({setEtape, Etape}) {
             
             <form className='BlocColorPicker'>
                 {Etape === 1 &&
-                <p className='TextColorPicker'>Choisi la couleur de fond de ta pochette :</p>}
+                <p className='TextColorPicker'>Choisis la couleur de fond de ta pochette :</p>}
                 {Etape === 1 &&
                 <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}
                 <div className='Album' style={{backgroundColor: Couleur}}></div>

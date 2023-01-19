@@ -38,9 +38,9 @@ function Texte({setEtape, Etape}) {
                 {Etape === 3 &&
                     <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
                 {Etape === 3 &&
-                     <input type="range" id="select-text1" onChange={(event)=>setTop(event.target.value+'%')}/>}
+                     <input type="range" id="select-text2" onChange={(event)=>setTop(event.target.value+'%')}/>}
                 {Etape === 3 &&     
-                     <input type="range" id="select-text2" onChange={(event)=>setLeft(event.target.value+'%')}/>}
+                     <input type="range" id="select-text1" onChange={(event)=>setLeft(event.target.value+'%')}/>}
                 {Etape === 3 &&     
                      <input type="color" id="select-text3" onChange={(event)=>setCouleur(event.target.value)}/>}
                 {Etape === 3 &&     
