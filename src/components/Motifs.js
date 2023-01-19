@@ -28,7 +28,8 @@ function Motifs({setEtape, Etape}) {
                             <button onclick="randomColor()">New Random Colors</button>
                             <button onclick="generateArt()">New Random Pattern</button>
                         </div>
-                    </div>*/}
+                    </div>
+                    */}
 
                 </div>
             </>

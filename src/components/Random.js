@@ -1,6 +1,4 @@
-/*
-
-// this is an array of possible background colors.
+/*// this is an array of possible background colors.
 var colors = [];
 while (colors.length < 100) {
     colors.push(`rgb(${rand(0, 255)}, ${rand(0, 255)}, ${rand(0, 255)})`);
