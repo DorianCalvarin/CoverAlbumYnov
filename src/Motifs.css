@@ -1,0 +1,14 @@
+
+.container {
+	margin: auto;
+	display: grid;
+}
+
+.buttons {
+	margin: 5px auto;
+}
+
+#art {
+	width: 400px;
+	height: 400px;
+}

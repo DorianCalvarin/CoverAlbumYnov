@@ -30,12 +30,17 @@ function Texte({setEtape, Etape}) {
                 {Etape === 3 &&
                     <p className='TitreAlbum'>Ajouter du texte</p>}
                 {Etape === 3 &&
-                    <input type="text" id="select-text" name="text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
-                     <input type="range" id="select-text1" name="text" placeholder='Titre exemple...' onChange={(event)=>setTop(event.target.value+'%')}/>
-                     <input type="range" id="select-text2" name="text" placeholder='Titre exemple...' onChange={(event)=>setLeft(event.target.value+'%')}/>
-                     <input type="color" id="select-text3" name="text" placeholder='Titre exemple...' onChange={(event)=>setCouleur(event.target.value)}/>
+                    <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
+                {Etape === 3 &&
+                     <input type="range" id="select-text1" onChange={(event)=>setTop(event.target.value+'%')}/>}
+                {Etape === 3 &&     
+                     <input type="range" id="select-text2" onChange={(event)=>setLeft(event.target.value+'%')}/>}
+                {Etape === 3 &&     
+                     <input type="color" id="select-text3" onChange={(event)=>setCouleur(event.target.value)}/>}
+                {Etape === 3 &&     
+                     <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
 
-                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur}}>{Texte}</p></div>
+                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur, fontSize: Size}}>{Texte}</p></div>
             </form>
             </>
         </div>
