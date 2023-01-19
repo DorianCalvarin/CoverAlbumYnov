@@ -83,7 +83,7 @@ function Motifs({setEtape, Etape}) {
                   <div class="container">
                       <div id="art">
                           <svg id="clickAbleSVG">
-                          {Etape === 2 &&
+                          {Etape >= 2 &&
                               <path id="jsSVGpath" fill={colors[colorSVGvalue]} d={jsSVGpath}/>}
                           </svg>
                       </div>
