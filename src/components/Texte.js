@@ -10,7 +10,6 @@ function Texte({setEtape, Etape}) {
     const [Size, setSize] = React.useState("12pt");
 
 
-
     return (
         <div>
 
