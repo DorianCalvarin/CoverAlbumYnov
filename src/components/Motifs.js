@@ -1,8 +1,69 @@
 import React from 'react';
 import '../Motifs.css';
-//import './Random';
 
 function Motifs({setEtape, Etape}) { 
+
+    const [colors, setColors] = React.useState([]);
+
+  // State to store the current color and path of the SVG
+  const [colorSVGvalue, setColorSVGvalue] = React.useState(0);
+  const [jsSVGpath, setJsSVGpath] = React.useState('');
+
+  // Generate an array of possible background colors
+  const generateColors = () => {
+    while (colors.length < 100) {
+      colors.push(`rgb(${rand(0, 255)}, ${rand(0, 255)}, ${rand(0, 255)})`);
+    }
+  };
+
+  // Random number generator
+  const rand = (frm, to) => {
+    return ~~(Math.random() * (to - frm)) + frm;
+  };
+
+  // Generate a random number inside a range
+  const randomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  // Choose a color at random from the colors array and set it as the background color for the art div
+  const randomColor = () => {
+    setColorSVGvalue(randomNumber(0, colors.length));
+  };
+
+  // Generate a string as an attribute for the jsSVGpath
+  const generateArt = () => {
+    let tmp = "",
+      tmp1 = "",
+      i,
+      x,
+      y;
+    for (i = 0; i < randomNumber(8, 15) * 2; i++) {
+      x = Math.floor(Math.random() * 500);
+      y = Math.floor(Math.random() * 500);
+      tmp += i === 0 ? " M" : " L";
+      tmp1 += i == 0 ? " M" : " L";
+      tmp += " " + x + " " + y;
+      tmp1 += " " + (500 - x) + " " + y;
+    }
+    setJsSVGpath(tmp + " " + tmp1);
+  };
+
+  // Handle click event on the SVG
+  const handleClick = () => {
+    randomColor();
+    generateArt();
+  };
+
+  // Generate colors and art when the component mounts
+  React.useEffect(() => {
+    generateColors();
+    randomColor();
+    generateArt();
+  }, []);
+    
+
+
     return (
         <div>
             <>
@@ -17,19 +78,19 @@ function Motifs({setEtape, Etape}) {
                             <div className='R5'></div>
                         </div>
                     }
-                    {/*
+                    
                     <div class="container">
-                        <div id="art">
-                            <svg id="clickAbleSVG" width="500" height="500" >
-                                <path id="jsSVGpath" stroke="#000" fill="green" />
-                            </svg>
-                        </div>
+                    <div id="art">
+                        <svg id="clickAbleSVG">
+                            <path id="jsSVGpath" fill={colors[colorSVGvalue]} d={jsSVGpath} />
+                        </svg>
+                    </div>
                         <div class="buttons">
-                            <button onclick="randomColor()">New Random Colors</button>
-                            <button onclick="generateArt()">New Random Pattern</button>
+                            <button onClick={()=>randomColor()}>New Random Colors</button>
+                            <button onClick={()=>generateArt()}>New Random Pattern</button>
                         </div>
                     </div>
-                    */}
+                    
 
                 </div>
             </>
