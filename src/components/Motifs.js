@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Motifs.css';
+
 function Motifs({setEtape, Etape}) { 
     return (
         <div>
@@ -15,6 +16,9 @@ function Motifs({setEtape, Etape}) {
                             <div className='R5'></div>
                         </div>
                     }
+
+                    
+
                 </div>
             </>
             
