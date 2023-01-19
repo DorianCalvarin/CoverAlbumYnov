@@ -8,7 +8,7 @@ function Fond({setEtape, Etape}) {
         <div>
                 <>
             <div className='Ariane'> 
-            {Etape === 1 && <h1 className='Couleurfond'>Couleur de fond</h1>}
+            {Etape === 1 && <h1 className='Couleurfond'>Couleur de fond</h1>} 
             {Etape === 1 && 
                 <div className='rectangles5'>
                     <div className='R1'></div>

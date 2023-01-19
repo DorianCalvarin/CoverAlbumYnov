@@ -1,13 +1,31 @@
 
 .buttons {
 	height: 10%;
+	width: 50%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
 }
 
 #art {
-	width: 400px;
-	height: 400px;
+	position: absolute;
+	width: 25%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	left: 37.5%;
+	top: 22%;
+}
+
+#clickAbleSVG{
+	width: 100%;
 }
 
 .container{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 50%;
+	height: 50vh;
 	margin: auto;
 }
