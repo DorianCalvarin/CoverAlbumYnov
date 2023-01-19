@@ -38,13 +38,13 @@ function Motifs({setEtape, Etape}) {
       i,
       x,
       y;
-    for (i = 0; i < randomNumber(8, 15) * 2; i++) {
-      x = Math.floor(Math.random() * 400);
-      y = Math.floor(Math.random() * 400);
+    for (i = 0; i < randomNumber(8, 12) * 2; i++) {
+      x = Math.floor(Math.random() * 350);
+      y = Math.floor(Math.random() * 350);
       tmp += i === 0 ? " M" : " L";
       tmp1 += i == 0 ? " M" : " L";
       tmp += " " + x + " " + y;
-      tmp1 += " " + (400 - x) + " " + y;
+      tmp1 += " " + (385 - x) + " " + y;
     }
     setJsSVGpath(tmp + " " + tmp1);
   };
@@ -78,27 +78,23 @@ function Motifs({setEtape, Etape}) {
                             <div className='R5'></div>
                         </div>
                     }
-
-                    <div>
-                    
-                    <div class="container">
-                        <div id="art">
-                            <svg id="clickAbleSVG">
-                            {Etape === 2 &&
-                                <path id="jsSVGpath" fill={colors[colorSVGvalue]} d={jsSVGpath} />}
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                      {Etape === 2 &&
-                        <button onClick={()=>randomColor()}>New Random Colors</button>}
-                      {Etape === 2 &&
-                        <button onClick={()=>generateArt()}>New Random Pattern</button>}
-                    </div>
-                    </div>
-                    
-
-                </div>
+                  </div>
+                
+                  <div class="container">
+                      <div id="art">
+                          <svg id="clickAbleSVG">
+                          {Etape === 2 &&
+                              <path id="jsSVGpath" fill={colors[colorSVGvalue]} d={jsSVGpath}/>}
+                          </svg>
+                      </div>
+                  
+                      <div class="buttons">
+                        {Etape === 2 &&
+                          <button onClick={()=>randomColor()}>New Random Colors</button>}
+                        {Etape === 2 &&
+                          <button onClick={()=>generateArt()}>New Random Pattern</button>}
+                      </div> 
+                    </div>               
             </>
             
         </div>
