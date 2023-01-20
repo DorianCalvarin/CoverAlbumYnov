@@ -1,8 +1,6 @@
 import React from 'react';
 import '../Fond.css';
-function Fond({setEtape, Etape}) {
-
-    const [Couleur, setCouleur] = React.useState("White");
+function Fond({setEtape, Etape, setCouleur, Couleur}) {
     
     return (
         <div>

@@ -1,13 +1,7 @@
 import React from 'react';
 import '../Motifs.css';
 
-function Motifs({setEtape, Etape}) { 
-
-    const [colors, setColors] = React.useState([]);
-
-  // State to store the current color and path of the SVG
-  const [colorSVGvalue, setColorSVGvalue] = React.useState(0);
-  const [jsSVGpath, setJsSVGpath] = React.useState('');
+function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGvalue, jsSVGpath, setJsSVGpath}) {
 
   // Generate an array of possible background colors
   const generateColors = () => {

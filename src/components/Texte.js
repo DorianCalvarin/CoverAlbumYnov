@@ -1,15 +1,7 @@
 import React from 'react';
 import '../Texte.css';
-function Texte({setEtape, Etape}) { 
+function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, setCouleurfont, Couleurfont, setSize, Size }) { 
     
-    const [Texte, setTexte] = React.useState("");
-    console.log(Etape)
-    const [Top, setTop] = React.useState("10%");
-    const [Left, setLeft] = React.useState("10%");
-    const [Couleur, setCouleur] = React.useState("Black");
-    const [Size, setSize] = React.useState("12pt");
-
-
     return (
         <div>
 
@@ -42,16 +34,16 @@ function Texte({setEtape, Etape}) {
                         <p className='TitreAlbum'>Ajouter du texte</p>}
                     <div className='AddTextBtn'>
                         {Etape === 3 &&
-                            <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
+                            <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTextes(event.target.value)}/>}
                         {Etape === 3 &&     
-                            <input type="color" id="select-text3" onChange={(event)=>setCouleur(event.target.value)}/>}
+                            <input type="color" id="select-text3" onChange={(event)=>setCouleurfont(event.target.value)}/>}
                     </div>
                 </div>
 
                 {Etape === 3 &&     
                      <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
 
-                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleur, fontSize: Size, fontFamily: 'impact'}}>{Texte}</p></div>
+                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleurfont, fontSize: Size, fontFamily: 'impact'}}>{Textes}</p></div>
             </form>
             </>
         </div>

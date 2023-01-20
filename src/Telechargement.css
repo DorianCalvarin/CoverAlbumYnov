@@ -25,3 +25,46 @@ html, body{
 	cursor: pointer;
 	transition: all 0.5s;
 }
+
+.CaptureRef{
+    display: block;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Wrapper{
+    position:absolute;
+    top:-2.5vh;
+    left:-0.5vw;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.AlbumContainer{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+}
+
+.AlbumEtape{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+#AlbumCapture{
+    width: 100%;
+    height: 100%;
+}
+
+
+

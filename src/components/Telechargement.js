@@ -2,34 +2,35 @@ import React from 'react';
 import '../Telechargement.css';
 import html2canvas from "html2canvas";
 
-function Telechargement({setEtape, Etape}) { 
+function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGpath, Textes, Top, Left, Couleurfont, Size}) { 
 
     const ToCaptureRef = React.useRef() // ref
 
-   function captureScreenshot() {
-        var canvasPromise = html2canvas(ToCaptureRef.current, {
-          useCORS: true
-        });
-        canvasPromise.then((canvas)=> {
-            var dataURL = canvas.toDataURL("image/png");
-            // Create an image element from the data URL
-            var img = new Image();
-            img.src = dataURL;
-            img.download = dataURL;
-            // Create a link element
-            var a = document.createElement("a");
-            a.target = "_blank";
-            // Set the href of the link to the data URL of the image
-            a.href = img.src;
-            // Set the download attribute of the link
-            a.download = img.download;
-            // Append the link to the page
-            document.body.appendChild(a);
-            // Click the link to trigger the download
-            a.click();
-        });
+   const captureScreenshot=()=> {
+    var canvasPromise = html2canvas(ToCaptureRef.current, {
+      useCORS: true
+    });
+    canvasPromise.then((canvas)=> {
+      var dataURL = canvas.toDataURL("image/png");
+      // Create an image element from the data URL
+      var img = new Image();
+      img.src = dataURL;
+      img.download = dataURL;
+      // Create a link element
+      var a = document.createElement("a");
+      a.innerHTML = "DOWNLOAD";
+      a.target = "_blank";
+      // Set the href of the link to the data URL of the image
+      a.href = img.src;
+      // Set the download attribute of the link
+      a.download = img.download;
+      // Append the link to the page
+      document.body.appendChild(a);
+      // Click the link to trigger the download
+      a.click();
+    });
 
-   }
+  }
         return (
             <div>
                 <>
@@ -46,9 +47,20 @@ function Telechargement({setEtape, Etape}) {
                     }
                 </div>
 
-                <div id='art' ref={ToCaptureRef}>
-                    
+                <div className="Wrapper">
+                    <div className="AlbumContainer" ref={ToCaptureRef}>
+                        <div className='Album'></div>
+                        <div id='art'></div>
+                        <div className='AlbumText'></div>
+                        <div className="AlbumEtape" style={{backgroundColor: Couleur}}>
+                            <svg id="clickAbleSVG">
+                                    <path  fill={colorSVGvalue} d={jsSVGpath}/>
+                            </svg>
+                            <p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleurfont, fontSize: Size, fontFamily: 'impact'}}>{Textes}</p>
+                        </div>
+                    </div>
                 </div>
+
                 <div className='BlocCapture'>
                     <p className='TextColorPicker'>Clique pour télécharger ta cover !</p>
                     <button onClick={()=>captureScreenshot()} id='ScreenShot'>ScreenShot</button>
