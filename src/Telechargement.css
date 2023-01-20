@@ -3,3 +3,25 @@ html, body{
     padding : 0;
 
 }
+
+.BlocCapture{
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#ScreenShot{
+    background: #F32C2C;
+	color: white;
+	border: 4px solid #F32C2C;
+	border-radius: 10px;
+	font-size: 1.2em;
+	padding: 1em 2em;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	transition: all 0.5s;
+}

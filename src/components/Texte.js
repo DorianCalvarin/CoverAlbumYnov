@@ -27,8 +27,6 @@ function Texte({setEtape, Etape}) {
                 }
             </div>
             <form className='Text'>
-                {Etape === 3 &&
-                    <p className='TitreAlbum'>Ajouter du texte</p>}
                     {Etape === 3 &&
                     <p className='Positiontop'>Position du texte</p>}
                       {Etape === 3 &&
@@ -36,13 +34,20 @@ function Texte({setEtape, Etape}) {
                     
                     
                 {Etape === 3 &&
-                    <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
-                {Etape === 3 &&
                      <input type="range" id="select-text2" onChange={(event)=>setTop(event.target.value+'%')}/>}
                 {Etape === 3 &&     
                      <input type="range" id="select-text1" onChange={(event)=>setLeft(event.target.value+'%')}/>}
-                {Etape === 3 &&     
-                     <input type="color" id="select-text3" onChange={(event)=>setCouleur(event.target.value)}/>}
+                <div className='AddText'>
+                    {Etape === 3 &&
+                        <p className='TitreAlbum'>Ajouter du texte</p>}
+                    <div className='AddTextBtn'>
+                        {Etape === 3 &&
+                            <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTexte(event.target.value)}/>}
+                        {Etape === 3 &&     
+                            <input type="color" id="select-text3" onChange={(event)=>setCouleur(event.target.value)}/>}
+                    </div>
+                </div>
+
                 {Etape === 3 &&     
                      <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
 

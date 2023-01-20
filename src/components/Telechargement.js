@@ -3,11 +3,10 @@ import '../Telechargement.css';
 import html2canvas from "html2canvas";
 
 function Telechargement({setEtape, Etape}) { 
-/*
-    const App = ()=> {
+
     const ToCaptureRef = React.useRef() // ref
 
-    captureScreenshot(); {
+   function captureScreenshot() {
         var canvasPromise = html2canvas(ToCaptureRef.current, {
           useCORS: true
         });
@@ -19,7 +18,6 @@ function Telechargement({setEtape, Etape}) {
             img.download = dataURL;
             // Create a link element
             var a = document.createElement("a");
-            a.innerHTML = "DOWNLOAD";
             a.target = "_blank";
             // Set the href of the link to the data URL of the image
             a.href = img.src;
@@ -30,9 +28,8 @@ function Telechargement({setEtape, Etape}) {
             // Click the link to trigger the download
             a.click();
         });
-    
-    }
-    render(); {
+
+   }
         return (
             <div>
                 <>
@@ -49,26 +46,18 @@ function Telechargement({setEtape, Etape}) {
                     }
                 </div>
 
-                <div ref={ToCaptureRef}>
-                    <h1>Hello hello</h1>
-                    <img
-                    alt="temp"
-                    style={{ width: "500px" }}
-                    src="https://images.pexels.com/photos/2694037/pexels-photo-2694037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
-                    <button onClick={()=>captureScreenshot}>ScreenShot</button>
+                <div id='art' ref={ToCaptureRef}>
+                    
                 </div>
-
+                <div className='BlocCapture'>
+                    <p className='TextColorPicker'>Clique pour télécharger ta cover !</p>
+                    <button onClick={()=>captureScreenshot()} id='ScreenShot'>ScreenShot</button>
+                </div>
                 </>
             </div>
 
         );
     }
-}
-
-*/
-
-
-}
 
 
 export default Telechargement;

@@ -94,7 +94,7 @@ function Motifs({setEtape, Etape}) {
                         {Etape === 2 &&
                           <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}
                         {Etape === 2 &&
-                          <button onClick={()=>generateArt()}>New Random Pattern</button>}
+                          <button className='BtnRandomPat' onClick={()=>generateArt()}>Génère un motif aléatoire</button>}
                       </div> 
                     </div>               
             </>
