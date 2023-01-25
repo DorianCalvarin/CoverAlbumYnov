@@ -4,8 +4,7 @@ import Fond from './Fond';
 import Motifs from './Motifs';
 import Texte from './Texte';
 import Filtre from './Filtre';
-import Telechargement from './Telechargement'; 
-import html2canvas from "html2canvas";
+import Telechargement from './Telechargement';
 
 function Creationalbum() {
     
@@ -18,34 +17,9 @@ function Creationalbum() {
     const [Top, setTop] = React.useState("10%");
     const [Left, setLeft] = React.useState("10%");
     const [Couleurfont, setCouleurfont] = React.useState("Black");
-    const [Size, setSize] = React.useState("12pt");
+    const [Size, setSize] = React.useState("12pt"); 
 
     const ToCaptureRef = React.useRef() // ref
-
-   function captureScreenshot() {
-        var canvasPromise = html2canvas(ToCaptureRef.current, {
-          useCORS: true
-        });
-        canvasPromise.then((canvas)=> {
-            var dataURL = canvas.toDataURL("image/png");
-            // Create an image element from the data URL
-            var img = new Image();
-            img.src = dataURL;
-            img.download = dataURL;
-            // Create a link element
-            var a = document.createElement("a");
-            a.target = "_blank";
-            // Set the href of the link to the data URL of the image
-            a.href = img.src;
-            // Set the download attribute of the link
-            a.download = img.download;
-            // Append the link to the page
-            document.body.appendChild(a);
-            // Click the link to trigger the download
-            a.click();
-        });
-
-   }
 
     return (
         <div className='All'>

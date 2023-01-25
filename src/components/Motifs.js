@@ -38,7 +38,7 @@ function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGv
       x = Math.floor(Math.random() * width);
       y = Math.floor(Math.random() * width);
       tmp += i === 0 ? " M" : " L";
-      tmp1 += i == 0 ? " M" : " L";
+      tmp1 += i === 0 ? " M" : " L";
       tmp += " " + x + " " + y;
       tmp1 += " " + (width - x) + " " + y;
     }
@@ -74,23 +74,27 @@ function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGv
                             <div className='R5'></div>
                         </div>
                     }
-                  </div>
-                
-                  <div class="container">
-                      <div id="art">
-                          <svg id="clickAbleSVG">
-                          {Etape >= 2 &&
-                              <path id="jsSVGpath" fill={colorSVGvalue} d={jsSVGpath}/>}
-                          </svg>
-                      </div>
+                </div>
+                                  
+                <div className="Wrapper">
+                    <div className="AlbumContainer">
+                        <div id='art'></div>
+                        <div className='AlbumText'></div>
+                        <div className="AlbumEtape">
+                            <svg id="clickAbleSVG">
+                                <path  fill={colorSVGvalue} d={jsSVGpath}/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
                   
-                      <div class="buttons">
-                        {Etape === 2 &&
-                          <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}
-                        {Etape === 2 &&
-                          <button className='BtnRandomPat' onClick={()=>generateArt()}>Génère un motif aléatoire</button>}
-                      </div> 
-                    </div>               
+                <div class="buttons">
+                  {Etape === 2 &&
+                    <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}
+                  {Etape === 2 &&
+                    <button className='BtnRandomPat' onClick={()=>generateArt()}>Génère un motif aléatoire</button>}
+                </div> 
+                       
             </>
             
         </div>

@@ -18,7 +18,7 @@ function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGp
       img.download = dataURL;
       // Create a link element
       var a = document.createElement("a");
-      a.innerHTML = "DOWNLOAD";
+      
       a.target = "_blank";
       // Set the href of the link to the data URL of the image
       a.href = img.src;
@@ -62,8 +62,8 @@ function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGp
                 </div>
 
                 <div className='BlocCapture'>
-                    <p className='TextColorPicker'>Clique pour télécharger ta cover !</p>
-                    <button onClick={()=>captureScreenshot()} id='ScreenShot'>ScreenShot</button>
+                    <p className='TextPicker'>Clique pour télécharger ta cover !</p>
+                    <button onClick={()=>captureScreenshot()} id='ScreenShot'>Télécharger</button>
                 </div>
                 </>
             </div>

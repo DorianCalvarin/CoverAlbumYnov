@@ -18,11 +18,21 @@ function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, 
                     </div>
                 }
             </div>
+
+            <div className="Wrapper">
+                <div className="AlbumContainer">
+                    <div className='AlbumText'></div>
+                    <div className="AlbumEtape">
+                        <p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleurfont, fontSize: Size, fontFamily: 'impact'}}>{Textes}</p>
+                    </div>
+                </div>
+            </div>
+
             <form className='Text'>
+                {Etape === 3 &&
+                <p className='Positiontop'>Position du texte</p>}
                     {Etape === 3 &&
-                    <p className='Positiontop'>Position du texte</p>}
-                      {Etape === 3 &&
-                    <p className='Tailletexte'>Taille du texte</p>}
+                <p className='Tailletexte'>Taille du texte</p>}
                     
                     
                 {Etape === 3 &&
@@ -41,9 +51,7 @@ function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, 
                 </div>
 
                 {Etape === 3 &&     
-                     <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
-
-                <div className='AlbumText'><p style={{top: Top,left: Left, position: 'absolute', margin: '0', color: Couleurfont, fontSize: Size, fontFamily: 'impact'}}>{Textes}</p></div>
+                    <input type="range" id="select-text4" onChange={(event)=>setSize(event.target.value+'pt')}/>}
             </form>
             </>
         </div>

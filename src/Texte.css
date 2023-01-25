@@ -4,17 +4,6 @@ html, body{
 
 }
 
-
-.AlbumText {
-    position: absolute;
-    width: 25%;
-    height: 50%;
-    left: 37.5%;
-    top: 22%;
-    opacity: 1;
-    overflow: hidden;
-}
-
 .Text{
     display: flex;
     height: 64vh;
@@ -27,6 +16,7 @@ html, body{
     color: white;
     font-size: 1.5em;
     font-family: lato;
+    margin: 3%;
 }
 
 #select-text1{
@@ -82,10 +72,6 @@ html, body{
     color: white;
     font-size: 1.5em;
     font-family: lato;
-}
-input[type=range]:-moz-range-progress {
-    height: 100;
-    background: transparent;        /* supprime barre progression avant */
 }
 
 .AddText{

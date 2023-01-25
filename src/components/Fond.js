@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Fond.css';
 function Fond({setEtape, Etape, setCouleur, Couleur}) {
-    
+     
     return (
         <div>
                 <>
@@ -17,6 +17,14 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
                 </div>
                 }
             </div>
+            
+            <div className="Wrapper">
+                <div className="AlbumContainer">
+                    <div className='Album'></div>
+                    <div className="AlbumEtape" style={{backgroundColor: Couleur}}></div>
+                </div>
+            </div>
+
 
             
             <form className='BlocColorPicker'>
@@ -24,7 +32,7 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
                 <p className='TextColorPicker'>Choisis la couleur de fond de ta pochette :</p>}
                 {Etape === 1 &&
                 <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}
-                <div className='Album' style={{backgroundColor: Couleur}}></div>
+                
             </form>
         
             

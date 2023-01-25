@@ -53,7 +53,7 @@ Modifier la couleur de fond de la cover
 
 .BlocColorPicker{
     display: flex;
-    height: 66vh;
+    height: 67vh;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
@@ -63,6 +63,7 @@ Modifier la couleur de fond de la cover
     color: white;
     font-size: 1.5em;
     font-family: lato;
+    margin: 0;
 }
 
 #color-picker{
@@ -74,6 +75,7 @@ Modifier la couleur de fond de la cover
     cursor: pointer;
     height: 5em;
     padding: 0;
+    margin-top: 1em;
     width: 5em;
 }
 
