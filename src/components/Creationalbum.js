@@ -3,7 +3,6 @@ import '../Creationalbum.css';
 import Fond from './Fond';
 import Motifs from './Motifs';
 import Texte from './Texte';
-import Filtre from './Filtre';
 import Telechargement from './Telechargement';
 
 function Creationalbum() {
@@ -25,21 +24,21 @@ function Creationalbum() {
         <div className='All'>
             <div className='next'>
                 {Etape > 1 && <div className='RecGauche'onClick={() => setEtape(Etape-1)}></div>}
-                {Etape < 5 &&<div className='RecDroite'onClick={() => setEtape(Etape+1)}></div>}
+                {Etape < 4 &&<div className='RecDroite'onClick={() => setEtape(Etape+1)}></div>}
                 <div className='Fleches'>
                     <div className='FlecheG'>
                         {Etape > 1 && <img src="/FlecheG.png" onClick={() => setEtape(Etape-1)}  alt='fleche clicable gauche'></img>}
                     </div>
                     <div className='FlecheD'>
-                        {Etape < 5 && <img src="/FlecheD.png" onClick={() => setEtape(Etape+1)}  alt='Fleche clibable Droite'></img>}
+                        {Etape < 4 && <img src="/FlecheD.png" onClick={() => setEtape(Etape+1)}  alt='Fleche clibable Droite'></img>}
                     </div>
                 </div>
             </div>   
 
             <div className='Logo'>
-                <img src="/logoflip.png" alt='logo de flip'></img>  
-            </div> 
-            
+                <a href='src\components\Flip.js'><img src="/logoflip.png" alt='logo de flip'></img></a>  
+            </div>
+
             <div className='AnimFormes'>
                 <div className='box'><b></b></div>
                 <div className='box2'><b></b></div>
@@ -70,9 +69,7 @@ function Creationalbum() {
                                                     
                                                     </Texte></div>}
             
-            {Etape >= 4 && <div className='Etape4'> <Filtre setEtape={setEtape} Etape={Etape}></Filtre></div>} 
-
-            {Etape >= 5 && <div className='Etape5'> <Telechargement setEtape={setEtape} Etape={Etape} 
+            {Etape >= 4 && <div className='Etape5'> <Telechargement setEtape={setEtape} Etape={Etape} 
                                                                     Couleur={Couleur} 
                                                                     colors={colors}
                                                                     colorSVGvalue={colorSVGvalue}

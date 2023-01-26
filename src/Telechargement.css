@@ -15,7 +15,7 @@ html, body{
     color: white;
     font-size: 1.5em;
     font-family: lato;
-    margin: 1%;
+    margin: 2%;
 }
 
 #ScreenShot{
@@ -37,19 +37,19 @@ Postion de la cover
 /////////////////////////////////////////////*/
 
 .Wrapper{
-    position:absolute;
-    top:-2.5vh;
-    left:-0.5vw;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position: absolute;
+    top: -2.5vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: none;
 }
 
 .AlbumContainer{
-    position:absolute;
+    position: absolute;
     width:25vw;
     height:25vw;
 }
@@ -68,6 +68,42 @@ Postion de la cover
     width: 100%;
     height: 100%;
 }
+
+@keyframes moveAndSpin {
+    from {
+      transform: rotate(360deg) translateX(0%);
+    }
+    to {
+      transform: rotate(0deg) translateX(0%);
+    }
+}
+
+@keyframes slide-right-to-left {
+    from {
+      transform: translateX(-5%);
+    }
+    to {
+      transform: translateX(-27%);
+    }
+  }
+
+#vinyle{
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: 22vh;
+    animation: moveAndSpin 2s linear forwards 1.5;
+}
+
+.Vinyle{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -10;
+    animation: slide-right-to-left 3s ease-in-out forwards;
+}
+
 
 
 

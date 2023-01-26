@@ -3,16 +3,15 @@ import '../Fond.css';
 function Fond({setEtape, Etape, setCouleur, Couleur}) {
      
     return (
-        <div>
+        <div className='Allfond'>
                 <>
             <div className='Ariane'> 
-            {Etape === 1 && <h1 className='Couleurfond'>Couleur de fond</h1>} 
+            {Etape === 1 && <h1 className='Couleurfond'>Background color</h1>} 
             {Etape === 1 && 
-                <div className='rectangles5'>
+                <div className='rectangles4'>
                     <div className='R1'></div>
                     <div className='R2'></div>
                     <div className='R3'></div>
-                    <div className='R4'></div>
                     <div className='R5'></div> 
                 </div>
                 }
@@ -29,7 +28,7 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
             
             <form className='BlocColorPicker'>
                 {Etape === 1 &&
-                <p className='TextColorPicker'>Choisis la couleur de fond de ta pochette :</p>}
+                <p className='TextColorPicker'>Choose the background color of your cover:</p>}
                 {Etape === 1 &&
                 <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}
                 

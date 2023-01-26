@@ -7,13 +7,12 @@ function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, 
 
             <>
             <div className='Ariane'> 
-                {Etape === 3 && <h1 className='Couleurfond'>Texte</h1>}
+                {Etape === 3 && <h1 className='Couleurfond'>Text</h1>}
                 {Etape === 3 && 
-                    <div className='rectangles5'>
+                    <div className='rectangles4'>
                         <div className='R3'></div>
                         <div className='R2'></div>
                         <div className='R1'></div>
-                        <div className='R4'></div>
                         <div className='R5'></div>
                     </div>
                 }
@@ -30,9 +29,9 @@ function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, 
 
             <form className='Text'>
                 {Etape === 3 &&
-                <p className='Positiontop'>Position du texte</p>}
-                    {Etape === 3 &&
-                <p className='Tailletexte'>Taille du texte</p>}
+                    <p className='Positiontop'>Font position</p>}
+                {Etape === 3 &&
+                    <p className='Tailletexte'>Font size</p>}
                     
                     
                 {Etape === 3 &&
@@ -41,7 +40,7 @@ function Texte({setEtape, Etape, setTextes, Textes, setTop, Top, setLeft, Left, 
                      <input type="range" id="select-text1" onChange={(event)=>setLeft(event.target.value+'%')}/>}
                 <div className='AddText'>
                     {Etape === 3 &&
-                        <p className='TitreAlbum'>Ajouter du texte</p>}
+                        <p className='TitreAlbum'>Add text</p>}
                     <div className='AddTextBtn'>
                         {Etape === 3 &&
                             <input type="text" id="select-text" placeholder='Titre exemple...' onChange={(event)=>setTextes(event.target.value)}/>}
