@@ -5,7 +5,7 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
     return (
         <div className='Allfond'>
                 <>
-            <div className='Ariane'> 
+            <div className='Ariane'> {/*Menu*/}
             {Etape === 1 && <h1 className='Couleurfond'>Background color</h1>} 
             {Etape === 1 && 
                 <div className='rectangles4'>
@@ -17,7 +17,7 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
                 }
             </div>
             
-            <div className="Wrapper">
+            <div className="Wrapper">{/*bloc contenant la cover*/}
                 <div className="AlbumContainer">
                     <div className='Album'></div>
                     <div className="AlbumEtape" style={{backgroundColor: Couleur}}></div>
@@ -28,9 +28,9 @@ function Fond({setEtape, Etape, setCouleur, Couleur}) {
             
             <form className='BlocColorPicker'>
                 {Etape === 1 &&
-                <p className='TextColorPicker'>Choose the background color of your cover:</p>}
+                <p className='TextColorPicker'>Choose the background color of your cover:</p>}{/*texte en bas de la page*/}
                 {Etape === 1 &&
-                <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}
+                <input type="color" id="color-picker" name="color-picker" onChange={(event)=>setCouleur(event.target.value)}/>}{/*bouton pour changer la couleur du fond de la cover*/}
                 
             </form>
         

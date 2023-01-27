@@ -22,7 +22,7 @@ function Creationalbum() {
 
     return (
         <div className='All'>
-            <div className='next'>
+            <div className='next'>{/*boutons permettant de passer à l'étape suivante (positionnés aux extrémintés droites et gauches)*/}
                 {Etape > 1 && <div className='RecGauche'onClick={() => setEtape(Etape-1)}></div>}
                 {Etape < 4 &&<div className='RecDroite'onClick={() => setEtape(Etape+1)}></div>}
                 <div className='Fleches'>
@@ -35,7 +35,7 @@ function Creationalbum() {
                 </div>
             </div>   
 
-            <div className='Logo'>
+            <div className='Logo'>{/*logo flip en haut à gauche*/}
                 <a href='src\components\Flip.js'><img src="/logoflip.png" alt='logo de flip'></img></a>  
             </div>
 

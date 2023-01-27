@@ -63,7 +63,7 @@ function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGv
     return (
         <div>
             <>
-                <div className='Ariane'> 
+                <div className='Ariane'> {/*Menu*/}
                     {Etape === 2 && <h1 className='Couleurfond'>Pattern</h1>}
                     {Etape === 2 && 
                         <div className='rectangles4'>
@@ -75,7 +75,7 @@ function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGv
                     }
                 </div>
                                   
-                <div className="Wrapper">
+                <div className="Wrapper">{/*bloc contenant la cover*/}
                     <div className="AlbumContainer">
                         <div id='art'></div>
                         <div className='AlbumText'></div>
@@ -89,9 +89,9 @@ function Motifs({setEtape, Etape, Setcolors, colors, colorSVGvalue, setColorSVGv
                   
                 <div class="buttons">
                   {Etape === 2 &&
-                    <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}
+                    <input type="color" id="ColorPatern" onChange={(event)=>setColorSVGvalue(event.target.value)}/>}{/*bouton pour changer la couleur du motif */}
                   {Etape === 2 &&
-                    <button className='BtnRandomPat' onClick={()=>generateArt()}>Generate a random pattern</button>}
+                    <button className='BtnRandomPat' onClick={()=>generateArt()}>Generate a random pattern</button>} {/*Bouton pour générer un motif*/}
                 </div> 
                        
             </>

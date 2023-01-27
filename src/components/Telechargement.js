@@ -34,7 +34,7 @@ function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGp
         return (
             <div>
                 <>
-                <div className='Ariane'> 
+                <div className='Ariane'> {/*Menu*/}
                     {Etape === 4 && <h1 className='Couleurfond'>Download</h1>}
                     {Etape === 4 && 
                         <div className='rectangles4'>
@@ -46,7 +46,7 @@ function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGp
                     }
                 </div>
 
-                <div className="Wrapper">
+                <div className="Wrapper">{/*bloc contenant la cover*/}
                     <div className="AlbumContainer" ref={ToCaptureRef}>
                         <div className='Album'></div>
                         <div id='art'></div>
@@ -62,7 +62,7 @@ function Telechargement({setEtape, Etape, Couleur, colors, colorSVGvalue, jsSVGp
 
                 <div className='BlocCapture'>
                     <p className='TextPicker'>Click to download your cover !</p>
-                    <button onClick={()=>captureScreenshot()} id='ScreenShot'>Download</button>
+                    <button onClick={()=>captureScreenshot()} id='ScreenShot'>Download</button>{/*bouton pour télécharger l'album*/}
                 </div>
 
                 <div className='Vinyle'>
