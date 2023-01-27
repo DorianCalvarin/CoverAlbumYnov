@@ -39,7 +39,7 @@ function Creationalbum() {
                 <a href='src\components\Flip.js'><img src="/logoflip.png" alt='logo de flip'></img></a>  
             </div>
 
-            <div className='AnimFormes'>
+            <div className='AnimFormes'> {/*Formes animés arrière plan*/}
                 <div className='box'><b></b></div>
                 <div className='box2'><b></b></div>
                 <div className='box3'><b></b></div>
